@@ -251,6 +251,7 @@ color: #ECEBEB;
 	text-align: center;
 }
 /*自己加的*/
+/*
 .intro-header iframe {
 	position: absolute;
  	top: 0;
@@ -259,6 +260,7 @@ color: #ECEBEB;
  	height: 100%;
  	pointer-events: none;
 }
+*/
 
 .intro-message {
 	position: relative;
