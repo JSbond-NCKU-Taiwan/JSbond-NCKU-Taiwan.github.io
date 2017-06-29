@@ -10,7 +10,6 @@ http://www.andreagalanti.it
 
 body,input,button,select,textarea{
 font-family: Helvetica, Arial, 'LiHei Pro', '微軟正黑體', sans-serif;
-font-size:108%;
 }
 
 body, html {
@@ -254,6 +253,7 @@ color: #ECEBEB;
 	background: url(../img/intro/intro5.jpg) no-repeat center center;
 	background-size: cover;
 	text-align: center;
+	font-family: Helvetica, Arial, 'LiHei Pro', '微軟正黑體', sans-serif;
 }
 /*自己加的*/
 /*
