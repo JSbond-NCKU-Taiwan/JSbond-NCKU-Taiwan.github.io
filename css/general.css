@@ -9,7 +9,7 @@ http://www.andreagalanti.it
 /*General */
 
 body,input,button,select,textarea{
-font-family: "微軟正黑體", "微软雅黑", "メイリオ", "맑은 고딕","Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: Helvetica, Arial, 'LiHei Pro', '微軟正黑體', sans-serif;
 font-size:108%;
 }
 
