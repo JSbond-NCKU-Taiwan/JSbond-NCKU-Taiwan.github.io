@@ -8,6 +8,11 @@ http://www.andreagalanti.it
 
 /*General */
 
+body,input,button,select,textarea{
+font-family: "微軟正黑體", "微软雅黑", "メイリオ", "맑은 고딕","Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:108%;
+}
+
 body, html {
 	height: 100%;
 	width: 100%;
