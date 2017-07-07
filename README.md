@@ -1,7 +1,6 @@
-#Flatfy - Theme | New Version!
+JSbond (https://jsbond-ncku-taiwan.github.io)
 
-##Responsive Mobile & Flat Design 
-Own Carousel & Bootstrap Framework CSS 
-Font Icon Svg & Animate
+Site Developer: [陳建維 Jain Wei Chen]
+using Bootstrap
 
 Theme made by [Andrea Galanti](http://www.andreagalanti.it/flatfy.php)
