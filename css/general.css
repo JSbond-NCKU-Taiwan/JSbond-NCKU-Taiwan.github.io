@@ -156,6 +156,18 @@ filter: alpha(opacity=95) !important;
 	background: rgba(204, 204, 204, 0);
 }
 
+.mybutton_neon{
+	border: 1px solid #DE2D23;
+	color: #fff;
+	background-color:#DE2D23;
+}
+
+.mybutton_neon:hover{
+	border: 1px solid #DE2D23;
+	color: #DE2D23 !important;
+	background: rgba(204, 204, 204, 0);
+}
+
 .button_down img {
 width: 50px;
 
