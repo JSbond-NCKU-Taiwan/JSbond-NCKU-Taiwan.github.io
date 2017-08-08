@@ -6,179 +6,129 @@
   <script src="js/bootstrap.js"></script>
   <script src="js/owl.carousel.js"></script>
   <script src="js/script.js"></script>
-  <!-- 自訂JQ匯入語法 -->
-  <script>
-  $(function(){
-    $("#footer").load("footer.html");
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Google Web Font -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+  <!-- Custom CSS-->
+  <link href="css/general.css" rel="stylesheet">
+  <!-- StikyMenu -->
+  <script src="js/stickUp.min.js"></script>
+  <script type="text/javascript">
+  jQuery(function($) {
+    $(document).ready(function() {
+      $('.navbar-default').stickUp();
+    });
   });
   </script>
+  <!-- Smoothscroll -->
+  <script type="text/javascript" src="js/jquery.corner.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>new WOW().init();</script>
+  <script src="js/classie.js"></script>
+  <script src="js/uiMorphingButton_inflow.js"></script>
+  <!-- Magnific Popup core JS file -->
+  <script src="js/jquery.magnific-popup.js"></script>
+  <!-- Owl-Carousel(?) -->
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <link href="css/owl.theme.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <!-- Magnific Popup core CSS file(?) -->
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <!-- Modernizr -->
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="description" content="Website of Team JSbond-NCKU-Taiwan">
-    <meta name="author" content="mension620">
-    <!-- Facebook sharing settings -->
-    <!-- 未完成 -->
-    <meta property="og:url" content="https://jsbond-ncku-taiwan.github.io">
-    <meta property="og:title" content="JSbond">
-    <meta property="og:description" content="關於網站的描述">
-    <meta property="og:image" content="/img/icon/logo.png">
-
-    <title>JSbond</title>
-    <link rel="Shortcut Icon" type="image/x-icon" href="img/icon/logo.png"/>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Google Web Font -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-
-    <!-- Custom CSS-->
-    <link href="css/general.css" rel="stylesheet">
-
-    <!-- Owl-Carousel -->
-    <!-- ? -->
-    <link href="css/custom.css" rel="stylesheet">
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-
-    <!-- Magnific Popup core CSS file -->
-    <!-- ? -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
+  <title>JSbond</title>
+  <link rel="Shortcut Icon" type="image/x-icon" href="img/icon/logo.png"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="Website of Team JSbond from NCKU.">
+  <meta name="author" content="Team JSBond">
+  <!-- Facebook sharing settings(未完成) -->
+  <meta property="og:url" content="https://jsbond-ncku-taiwan.github.io">
+  <meta property="og:title" content="JSbond">
+  <meta property="og:description" content="關於網站的描述">
+  <meta property="og:image" content="/img/icon/logo.png">
 </head>
-
-<body id="home">
-    <!-- Preloader -->
-    <div id="preloader">
-      <div id="status"></div>
+<body id="top">
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="status"></div>
+  </div>
+  <div class="intro-header">
+    <div class="col-xs-12 text-center abcen1">
+      <h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">JSbond</h1>
+      <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">副標題</h3>
     </div>
+    <!-- 小圓按鈕 -->
+    <div class="col-xs-12 text-center abcen wow fadeIn">
+      <div class="button_down">
+        <a class="imgcircle wow bounceInUp" data-wow-duration="1.5s" href="#content"><img class="img_scroll" src="img/icon/circle.png"></a>
+      </div>
+    </div>
+  </div>
 
-    <!-- 最上面那塊自動調整的div -->
-    <div class="intro-header">
-      <div class="col-xs-12 text-center abcen1">
-        <h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">JSbond</h1>
-        <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">副標題</h3>
-        <!--
-        <ul class="list-inline intro-social-buttons">
-          <li>
-            <a target="_blank" href="https://facebook.com/NCKUBiomod/" class="btn btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">Facebook</span></a>
-          </li>
-          <li>
-            <a target="_blank" href="https://www.youtube.com/" class="btn btn-lg mybutton_neon wow swing wow fadeIn" data-wow-delay="1.2s"><span class="network-name">YouTube</span></a>
-          </li>
+  <!-- Navbar -->
+  <nav class="navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#top">JSbond</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li class="menuItem"><a href="overview">Overview</a></li>
+          <li class="menuItem"><a href="experiment">Experiment</a></li>
+          <li class="menuItem"><a href="discussion">Discussion</a></li>
+          <li class="menuItem"><a href="about">About</a></li>
         </ul>
-        -->
-      </div>
-      <!-- 往下切的按鈕 -->
-      <div class="col-xs-12 text-center abcen wow fadeIn">
-        <div class="button_down">
-          <a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#content"> <img class="img_scroll" src="img/icon/circle.png" alt=""></a>
-        </div>
       </div>
     </div>
+  </nav>
 
-    <!-- Navbar -->
-    <nav class="navbar-default" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#home">JSbond</a>
-        </div>
-        <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
-          <ul class="nav navbar-nav">
-            <li class="menuItem"><a href="overview">Overview</a></li>
-            <li class="menuItem"><a href="experiment">Experiment</a></li>
-            <li class="menuItem"><a href="discussion">Discussion</a></li>
-            <li class="menuItem"><a href="about">About</a></li>
+  <!-- 內文#content -->
+  <div id="content" class="content-section-a">
+    <div class="container">
+      <div class="row">
+        <h3 class="section-heading">Abstract</h3>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">
+          <p class="lead">用經驗修補工具的耐久度。
+            <br>當附有該魔咒的物品被帶在身上（主手、副手或作為盔甲穿戴）時，撿起的經驗球不會累加進玩家的總經驗中，而會被用於修復物品耐久度，比率為每1點經驗增加2點耐久度。若多個物品擁有此魔咒，則每個經驗球會選擇隨機一件物品；若被選中的物品不需要修補，則會累加進玩家的總經驗中，而不再選擇另外一件物品。</p>
+          <ul class="descp lead2">
+            <li><i class="glyphicon glyphicon-check"></i> 儲物箱</li>
+            <li><i class="glyphicon glyphicon-check"></i> 釣魚</li>
+            <li><i class="glyphicon glyphicon-check"></i> 交易</li>
           </ul>
         </div>
-      </div>
-    </nav>
-
-    <!-- 內文#content -->
-    <div id="content" class="content-section-a">
-      <div class="container">
-        <div class="row">
-          <h3 class="section-heading">Abstract</h3>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">
-            <p class="lead">用經驗修補工具的耐久度。
-              <br>當附有該魔咒的物品被帶在身上（主手、副手或作為盔甲穿戴）時，撿起的經驗球不會累加進玩家的總經驗中，而會被用於修復物品耐久度，比率為每1點經驗增加2點耐久度。若多個物品擁有此魔咒，則每個經驗球會選擇隨機一件物品；若被選中的物品不需要修補，則會累加進玩家的總經驗中，而不再選擇另外一件物品。</p>
-            <ul class="descp lead2">
-              <li><i class="glyphicon glyphicon-check"></i> 儲物箱</li>
-              <li><i class="glyphicon glyphicon-check"></i> 釣魚</li>
-              <li><i class="glyphicon glyphicon-check"></i> 交易</li>
-            </ul>
-          </div>
-          <div class="col-sm-6 wow fadeInRightBig">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6X-zKy70I1Y" frameborder="0" allowfullscreen></iframe>
-          </div>
+        <div class="col-sm-6 wow fadeInRightBig">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/6X-zKy70I1Y" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- footer -->
-    <div id="footer"></div>
-    <!-- 暫時移除
-    <footer>
-      <div class="container">
-        <div class="row">
-
-        	<div class="col-md-7">
-            <h3 class="footer-title">Contact us</h3>
-            <p>Facebook:
-              <a href="https://facebook.com/NCKUBiomod/" target="_blank">NCKUBiomod</a>
-            </p>
-            <p>
-              <a rel="cc:attributionURL" href="http://www.andreagalanti.it/flatfy" property="dc:title">Flatfy Theme </a> by
-              <a rel="dc:creator" href="http://www.andreagalanti.it" property="cc:attributionName">Andrea Galanti</a> is licensed to the public under <br>the <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/it/deed.it">Creative Commons Attribution 3.0 License - NOT COMMERCIAL</a>.
-            </p>
-          </div>
-
-          <div class="col-md-5">
-            <div class="footer-banner">
-              <h3 class="footer-title">JSbond</h3>
-              <ul>
-                <li>For psoriasis</li>
-              </ul>
-            </div>
-        	</div>
-
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="footer-title">JSbond</h3>
+          <p>
+            <a rel="cc:attributionURL" href="http://www.andreagalanti.it/flatfy" property="dc:title">Flatfy Theme</a> by <a rel="dc:creator" href="http://www.andreagalanti.it" property="cc:attributionName">Andrea Galanti</a> is licensed to the public under the <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/it/deed.it">Creative Commons Attribution 3.0 License - NOT COMMERCIAL</a>.
+          </p>
         </div>
       </div>
-    </footer>
-  -->
-
-
-
-    <!-- StikyMenu -->
-    <script src="js/stickUp.min.js"></script>
-    <script type="text/javascript">
-    jQuery(function($) {
-      $(document).ready(function() {
-        $('.navbar-default').stickUp();
-      });
-    });
-    </script>
-    <!-- Smoothscroll -->
-    <script type="text/javascript" src="js/jquery.corner.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>new WOW().init();</script>
-    <script src="js/classie.js"></script>
-    <script src="js/uiMorphingButton_inflow.js"></script>
-    <!-- Magnific Popup core JS file -->
-    <script src="js/jquery.magnific-popup.js"></script>
+    </div>
+  </footer>
 </body>
 </html>
