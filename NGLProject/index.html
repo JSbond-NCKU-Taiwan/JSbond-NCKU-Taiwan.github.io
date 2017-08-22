@@ -4,58 +4,32 @@
   <meta charset="utf-8">
 </head>
 <body>
-
+  <script src="js/ngl.js"></script>
   <script>
-  // Setup to load data from rawgit
-  NGL.DatasourceRegistry.add(
-      "data", new NGL.StaticDatasource( "//cdn.rawgit.com/arose/ngl/v0.10.4/data/" )
-  );
+    document.addEventListener("DOMContentLoaded", function () {
+      var stage = new NGL.Stage("viewport");
 
-  // Create NGL Stage object
-  var stage = new NGL.Stage( "viewport" );
-
-  // Handle window resizing
-  window.addEventListener( "resize", function( event ){
-      stage.handleResize();
-  }, false );
+      // Handle window resizing
+      window.addEventListener( "resize", function( event ){
+          stage.handleResize();
+      }, false );
 
 
-  // Code for example: interactive/hover-tooltip
+      // Code for example: color/chainid
 
-  // create tooltip element and add to document body
-  var tooltip = document.createElement("div")
-  Object.assign(tooltip.style, {
-    display: "none",
-    position: "fixed",
-    zIndex: 10,
-    pointerEvents: "none",
-    backgroundColor: "rgba( 0, 0, 0, 0.6 )",
-    color: "lightgrey",
-    padding: "8px",
-    fontFamily: "sans-serif"
-  })
-  document.body.appendChild(tooltip)
+      stage.loadFile("data/1l5q.pdb1").then(function (o) {
+        o.addRepresentation("licorice")
+        o.addRepresentation("cartoon", {
+          assembly: "BU1", color: 0xFF1111
+        })
+        o.addRepresentation("cartoon", {
+          assembly: "BU2", color: 0x11FF11
+        })
+        o.autoView()
+      })
 
-  // load a structure file
-  stage.loadFile("data://1blu.mmtf", { defaultRepresentation: true })
-
-  // remove default hoverPick mouse action
-  stage.mouseControls.remove("hoverPick")
-
-  // listen to `hovered` signal to move tooltip around and change its text
-  stage.signals.hovered.add(function (pickingProxy) {
-    if (pickingProxy && (pickingProxy.atom || pickingProxy.bond)) {
-      var atom = pickingProxy.atom || pickingProxy.closestBondAtom
-      var mp = pickingProxy.mouse.position
-      tooltip.innerText = "ATOM: " + atom.qualifiedName()
-      tooltip.style.bottom = window.innerHeight - mp.y + 3 + "px"
-      tooltip.style.left = mp.x + 3 + "px"
-      tooltip.style.display = "block"
-    } else {
-      tooltip.style.display = "none"
-    }
-  })
+    });
   </script>
-  <div id="viewport" style="width:400px; height:300px;"></div>
+  <div id="viewport" style="width:1000px; height:800px;"></div>
 </body>
 </html>
