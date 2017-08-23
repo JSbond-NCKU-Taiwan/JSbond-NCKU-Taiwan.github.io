@@ -39,6 +39,27 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
 
     <script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
+
+    <script src="NGLProject/js/ngl.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var stage = new NGL.Stage("viewport");
+        window.addEventListener( "resize", function( event ){
+            stage.handleResize();
+        }, false );
+        stage.loadFile("NGLProject/data/1l5q.pdb1").then(function (o) {
+          o.addRepresentation("licorice")
+          o.addRepresentation("cartoon", {
+            assembly: "BU1", color: 0xFF1111
+          })
+          o.addRepresentation("cartoon", {
+            assembly: "BU2", color: 0x11FF11
+          })
+          o.autoView()
+        })
+      });
+    </script>
+
 </head>
 <body id="home">
     <!-- Preloader -->
@@ -70,9 +91,11 @@
     </nav>
 
 	<!-- 討論(discussion) -->
+
 	<div id="discussion" class="content-section-b">
         <div class="container">
           <div class="row" >
+            <div id="viewport" style="width:80%; height:80%;"></div>
 			 <div class="col-md-6 col-md-offset-3 text-center wrap_title ">
 				<h2>Discussion</h2>
 				<p class="lead" style="margin-top:0">如果不需要也可以改掉或廢掉</p>
