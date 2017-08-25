@@ -1,277 +1,217 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="description" content="Website of Team JSbond-NCKU-Taiwan">
-    <meta name="author" content="mension620">
-    <!-- Facebook sharing settings -->
-    <!-- 未完成 -->
-    <meta property="og:url" content="https://jsbond-ncku-taiwan.github.io">
-    <meta property="og:title" content="JSbond - About">
-    <meta property="og:description" content="關於About的介紹">
-    <meta property="og:image" content="/img/icon/logo.png">
+  <!-- JavaScript -->
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/script.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Google Web Font -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+  <!-- Custom CSS-->
+  <link href="css/general.css" rel="stylesheet">
+  <!-- StikyMenu -->
+  <!--
+  <script src="js/stickUp.min.js"></script>
+  <script type="text/javascript">
+  jQuery(function($) {
+    $(document).ready(function() {
+      $('.navbar-default').stickUp();
+    });
+  });
+  </script>
+  -->
+  <!-- Smoothscroll -->
+  <script type="text/javascript" src="js/jquery.corner.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>new WOW().init();</script>
+  <script src="js/classie.js"></script>
+  <script src="js/uiMorphingButton_inflow.js"></script>
+  <!-- Magnific Popup core JS file -->
+  <script src="js/jquery.magnific-popup.js"></script>
+  <!-- Owl-Carousel(?) -->
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <link href="css/owl.theme.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <!-- Magnific Popup core CSS file(?) -->
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <!-- Modernizr -->
 
-    <title>JSbond - About</title>
-    <link rel="Shortcut Icon" type="image/x-icon" href="img/icon/logo.png"/>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Google Web Font -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-
-    <!-- Custom CSS-->
-    <link href="css/general.css" rel="stylesheet">
-
-    <!-- Owl-Carousel -->
-    <!-- ? -->
-    <link href="css/custom.css" rel="stylesheet">
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-
-    <!-- Magnific Popup core CSS file -->
-    <!-- ? -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
+  <title>JSbond | About</title>
+  <link rel="Shortcut Icon" type="image/x-icon" href="img/icon/logo.png"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="Website of Team JSbond from NCKU.">
+  <meta name="author" content="Team JSBond">
+  <!-- Facebook sharing settings(未完成) -->
+  <meta property="og:url" content="https://jsbond-ncku-taiwan.github.io/about">
+  <meta property="og:title" content="JSbond">
+  <meta property="og:description" content="關於網站的描述">
+  <meta property="og:image" content="/img/icon/logo.png">
 </head>
-<body id="home">
-    <!-- Preloader -->
-    <div id="preloader">
-      <div id="status"></div>
-    </div>
-
-    <!-- Navbar -->
-    <nav class="navbar-default" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="./">JSbond</a>
-        </div>
-        <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
-          <ul class="nav navbar-nav">
-            <li class="menuItem"><a href="overview">Overview</a></li>
-            <li class="menuItem"><a href="experiment">Experiment</a></li>
-            <li class="menuItem"><a href="discussion">Discussion</a></li>
-            <li class="active"><a href="#about">About</a></li>
-          </ul>
-        </div>
+<body id="top">
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="status"></div>
+  </div>
+  <!-- Navbar -->
+  <nav class="navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="./">JSbond</a>
       </div>
-    </nav>
+      <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li class="menuItem"><a href="overview">Overview</a></li>
+          <li class="menuItem"><a href="experiment">Experiment</a></li>
+          <li class="menuItem"><a href="discussion">Discussion</a></li>
+          <li class="active"><a href="#top">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 	<!-- 關於我們 -->
-  <div id="advisor" class="content-section-a" style="border-top: 0">
+  <div class="content-section-a">
     <div class="container">
       <div class="col-md-6 col-md-offset-3 text-center wrap_title">
-        <h2>指導老師</h2>
-        <p class="lead" style="margin-top:0">子民引導者</p>
+        <h2>Instructor</h2><br>
       </div>
       <div class="row">
-        <div class="col-sm-4 wow fadeInDown text-center">
-          <img class="rotate" src="img/about/jainwei.png" alt="Generic placeholder image">
-          <h3>詹正雄</h3>
-          <p class="lead">BOSS級中的BOSS級</p>
+        <div class="col-sm-12 wow fadeInDown text-center">
+          <img class="rotate" src="img/icon/picture.svg" alt="Generic placeholder image">
+          <h3>Prof. Jeng-Shiung Jan</h3>
+          <p class="lead">Ph.D in Chemical Engineering,<br>Texas A&amp;M University, College Station, TX Dec 2006</p>
+
         </div>
-        <div class="col-sm-4 wow fadeInDown text-center">
-          <img  class="rotate" src="img/icon/picture.svg" alt="Generic placeholder image">
-          <h3>陳宇楓</h3>
-          <p class="lead">BOSS級</p>
+      </div>
+    </div>
+  </div>
+  <div class="content-section-b">
+    <div class="container">
+      <div class="col-md-6 col-md-offset-3 text-center wrap_title">
+        <h2>Advisor</h2><br>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 wow fadeInDown text-center">
+          <img class="rotate" src="img/icon/picture.svg" alt="Generic placeholder image">
+          <h3>Yu-Fon Chen</h3>
+          <p class="lead">Ph.D in Life Science<br>National Cheng Kung University – Department of Life Sciences</p>
         </div>
       </div>
     </div>
   </div>
 
-	<div id="teammates" class="content-section-a " style="border-top: 0">
+	<div class="content-section-a">
 		<div class="container">
 			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-				<h2>關於我們</h2>
-				<p class="lead" style="margin-top:0">噓，講出來你會怕！<br></p>
+				<h2>Team members</h2><br>
 			</div>
-
 			<div class="row">
 				<div class="col-sm-4 wow fadeInDown text-center">
-					<img class="rotate" src="img/icon/picture.svg" alt="Generic placeholder image">
-					<h3>許洺維</h3>
-					<p class="lead">首席CEO，不用多說。</p>
+					<img class="rotate" src="img/icon/picture.svg" alt="Hsu Ming Wei">
+					<h3>Hsu Ming Wei</h3>
+					<p class="lead">許洺維</p>
 				</div>
 				<div class="col-sm-4 wow fadeInDown text-center">
-					<img  class="rotate" src="img/icon/picture.svg" alt="Generic placeholder image">
-					<h3>林弘生</h3>
-					<p class="lead">首席動畫師</p>
+					<img class="rotate" src="img/icon/picture.svg" alt="Lee Hsuan Wei">
+					<h3>Lee Hsuan Wei</h3>
+					<p class="lead">李宣葦</p>
 				</div>
 				<div class="col-sm-4 wow fadeInDown text-center">
-					<img  class="rotate" src="img/icon/retina.svg" alt="Generic placeholder image">
-					<h3>李玟</h3>
-					<p class="lead">創意總監</p>
+					<img class="rotate" src="img/icon/picture.svg" alt="Lee Chia Hsuan">
+					<h3>Lee Chia Hsuan</h3>
+					<p class="lead">李佳璇</p>
 				</div>
 			</div>
-
-			<div class="row tworow">
-				<div class="col-sm-4  wow fadeInDown text-center">
-					<img class="rotate" src="img/icon/laptop.svg" alt="Generic placeholder image">
-					<h3>林宛樺</h3>
-					<p class="lead">肌肉誠可貴，內含價更高；<br>若為求完美，當然兩者兼。</p>
+			<div class="row">
+				<div class="col-sm-4 wow fadeInDown text-center">
+					<img class="rotate" src="img/icon/picture.svg" alt="Lee Wen">
+					<h3>Lee Wen</h3>
+					<p class="lead">李玟</p>
 				</div>
 				<div class="col-sm-4 wow fadeInDown text-center">
-					<img  class="rotate" src="img/icon/map.svg" alt="Generic placeholder image">
-					<h3>李宣葦</h3>
-					<p class="lead">小心，不要打開那個開關。<br>她，會壞掉。</p>
+					<img class="rotate" src="img/icon/picture.svg" alt="Lin Hung Sheng">
+					<h3>Lin Hung Sheng</h3>
+					<p class="lead">林弘生</p>
 				</div>
 				<div class="col-sm-4 wow fadeInDown text-center">
-					<img  class="rotate" src="img/icon/browser.svg" alt="Generic placeholder image">
-					<h3>蕭煜彰</h3>
-					<p class="lead">不可思議的大腦</p>
+					<img class="rotate" src="img/icon/picture.svg" alt="Lin Wan Hua">
+					<h3>Lin Wan Hua</h3>
+					<p class="lead">林宛樺</p>
 				</div>
 			</div>
-
-			<div class="row tworow">
+			<div class="row">
 				<div class="col-sm-4 wow fadeInDown text-center">
-					<img class="rotate" src="img/icon/tweet.svg" alt="Generic placeholder image">
-					<h3>李佳璇</h3>
-					<p class="lead">好佳在，有妳真好。</p>
+					<img class="rotate" src="img/icon/picture.svg" alt="Hsiao Yu Chang">
+					<h3>Hsiao Yu Chang</h3>
+					<p class="lead">蕭煜彰</p>
 				</div>
 				<div class="col-sm-4 wow fadeInDown text-center">
-					<img  class="rotate" src="img/about/jainwei.png" alt="Generic placeholder image">
-					<h3>陳建維</h3>
-					<p class="lead">卑微的網頁設計師</p>
+					<img class="rotate" src="img/about/jainwei.png" alt="Chen Jain Wei">
+					<h3>Chen Jain Wei</h3>
+					<p class="lead">陳建維</p>
 				</div>
 			</div>
-
 		</div>
 	</div>
 
-	<div id="sponsors" class="content-section-b">
+	<div class="content-section-b">
 		<div class="container">
 			<div class="row">
-
-			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-				<h2>Sponsors</h2>
-				<p class="lead" style="margin-top:0">謝謝您<br>若不是您，我們無法走到今天。</p>
+        <div class="col-md-6 col-md-offset-3 text-center wrap_title">
+          <h2>Sponsors</h2><br>
+        </div>
+        <div class="col-sm-6 block wow bounceIn">
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <img src="img/about/1a.png" alt="">
+            </div>
+            <div class="col-md-8 box-ct">
+              <h3> 教育部高等教育司 </h3>
+              <p> Lorem ipsum dolor sit ametconsectetur adipiscing elit. Suspendisse orci quam. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 block wow bounceIn">
+  				<div class="row">
+            <div class="col-md-4 text-center">
+              <img src="img/about/1a.png" alt="">
+  					</div>
+  					<div class="col-md-8 box-ct">
+  						<h3> 成杏基金會 </h3>
+  						<p> Nullam mo  arcu ac molestie scelerisqu vulputate, molestie ligula gravida, tempus ipsum.</p>
+  					</div>
+  				</div>
+  			</div>
 			</div>
-
-			<div class="col-sm-6  block wow bounceIn">
-				<div class="row">
-					<div class="col-md-4 box-icon rotate">
-						<i class="fa fa-desktop fa-4x "> </i>
-					</div>
-					<div class="col-md-8 box-ct">
-						<h3> 教育部高等教育司 </h3>
-						<p> Lorem ipsum dolor sit ametconsectetur adipiscing elit. Suspendisse orci quam. </p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-sm-6 block wow bounceIn">
-				<div class="row">
-					<div class="col-md-4 box-icon rotate">
-						<i class="fa fa-picture-o fa-4x "> </i>
-					</div>
-					<div class="col-md-8 box-ct">
-						<h3> 成杏基金會 </h3>
-						<p> Nullam mo  arcu ac molestie scelerisqu vulputate, molestie ligula gravida, tempus ipsum.</p>
-					</div>
-				</div>
-			</div>
-
-			</div>
-
 			<div class="row tworow">
-				<div class="col-sm-6  block wow bounceIn">
+				<div class="col-sm-6 block wow bounceIn">
 					<div class="row">
-						<div class="col-md-4 box-icon rotate">
-							<i class="fa fa-magic fa-4x "> </i>
-						</div>
+            <div class="col-md-4 text-center">
+              <img src="img/about/1a.png" alt="">
+  					</div>
 						<div class="col-md-8 box-ct">
 							<h3> 國立成功大學醫學系 </h3>
 							<p> Lorem ipsum dolor sit ametconsectetur adipiscing elit. Suspendisse orci quam. </p>
 						</div>
 					</div>
 				</div>
-				<!--第四個贊助者可以放這裡
-				<div class="col-sm-6 block wow bounceIn">
-					<div class="row">
-						<div class="col-md-4 box-icon rotate">
-							<i class="fa fa-heart fa-4x "> </i>
-						</div>
-						<div class="col-md-8 box-ct">
-							<h3> Lorem Ipsum</h3>
-							<p> Nullam mo  arcu ac molestie scelerisqu vulputate, molestie ligula gravida, tempus ipsum.</p>
-						</div>
-					</div>
-				</div>
-				-->
 			</div>
 		</div>
 	</div>
-
-
-
-
-  <footer>
-    <div class="container">
-      <div class="row">
-
-        <div class="col-md-7">
-          <h3 class="footer-title">Contact us</h3>
-          <p>Facebook:
-            <a href="https://facebook.com/NCKUBiomod/" target="_blank">NCKUBiomod</a>
-          </p>
-          <!-- LICENSE -->
-          <p>
-            <a rel="cc:attributionURL" href="http://www.andreagalanti.it/flatfy" property="dc:title">Flatfy Theme </a> by
-            <a rel="dc:creator" href="http://www.andreagalanti.it" property="cc:attributionName">Andrea Galanti</a> is licensed to the public under <br>the <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/it/deed.it">Creative Commons Attribution 3.0 License - NOT COMMERCIAL</a>.
-          </p>
-        </div>
-
-        <div class="col-md-5">
-          <div class="footer-banner">
-            <h3 class="footer-title">JSbond</h3>
-            <ul>
-              <li>For psoriasis</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </footer>
-
-    <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
-	<script src="js/owl.carousel.js"></script>
-	<script src="js/script.js"></script>
-	<!-- StikyMenu -->
-	<script src="js/stickUp.min.js"></script>
-	<script type="text/javascript">
-	  jQuery(function($) {
-		$(document).ready( function() {
-		  $('.navbar-default').stickUp();
-
-		});
-	  });
-
-	</script>
-	<!-- Smoothscroll -->
-	<script type="text/javascript" src="js/jquery.corner.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script>
-	 new WOW().init();
-	</script>
-	<script src="js/classie.js"></script>
-	<script src="js/uiMorphingButton_inflow.js"></script>
-	<!-- Magnific Popup core JS file -->
-	<script src="js/jquery.magnific-popup.js"></script>
+  <footer id="jsFooter"></footer><script>$("#jsFooter").load("footer.html");</script>
 </body>
-
 </html>

@@ -15,6 +15,7 @@
   <!-- Custom CSS-->
   <link href="css/general.css" rel="stylesheet">
   <!-- StikyMenu -->
+  <!--
   <script src="js/stickUp.min.js"></script>
   <script type="text/javascript">
   jQuery(function($) {
@@ -23,6 +24,7 @@
     });
   });
   </script>
+  -->
   <!-- Smoothscroll -->
   <script type="text/javascript" src="js/jquery.corner.js"></script>
   <script src="js/wow.min.js"></script>
@@ -116,19 +118,6 @@
       </div>
     </div>
   </div>
-
-  <!-- footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="footer-title">JSbond</h3>
-          <p>
-            <a rel="cc:attributionURL" href="http://www.andreagalanti.it/flatfy" property="dc:title">Flatfy Theme</a> by <a rel="dc:creator" href="http://www.andreagalanti.it" property="cc:attributionName">Andrea Galanti</a> is licensed to the public under the <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/it/deed.it">Creative Commons Attribution 3.0 License - NOT COMMERCIAL</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <footer id="jsFooter"></footer><script>$("#jsFooter").load("footer.html");</script>
 </body>
 </html>
