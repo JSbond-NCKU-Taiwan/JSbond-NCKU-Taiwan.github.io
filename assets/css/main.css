@@ -3595,6 +3595,12 @@
 
 		#sidebar h2 {
 			font-size: 1.38889em;
+			font-family: 'Orbitron', sans-serif;
+			letter-spacing: 0.2em;
+		}
+
+		#sidebar section {
+			font-family: 'Orbitron', sans-serif;
 		}
 
 		#sidebar > .inner {
@@ -3968,13 +3974,14 @@
 		-ms-user-select: none;
 		user-select: none;
 		color: #3d4449;
-		font-family: "Roboto Slab", serif;
+		/* font-family: "Roboto Slab", serif; */
+		font-family: 'Orbitron', sans-serif;
 		font-family: 400;
 		letter-spacing: 0.075em;
 		list-style: none;
 		margin-bottom: 0;
 		padding: 0;
-		text-transform: uppercase;
+
 	}
 
 		#menu ul a, #menu ul span {
