@@ -23,7 +23,7 @@
         stage.handleResize();
     }, false );
     stage.setSpin(true);
-    stage.mouseControls.add("drag-left", NGL.MouseActions.rotateDrag);
+    stage.mouseControls.add("scroll", NGL.MouseActions.rotateDrag);
     stage.loadFile("assets/model/4ED5-PBLG5.pdb").then(function (o) {
       o.addRepresentation("cartoon", { color: "sstruc" })
       o.addRepresentation("ball+stick", { sele: "ligand", color: cuscolor })
