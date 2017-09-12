@@ -14,25 +14,23 @@
   <script>
   document.addEventListener("DOMContentLoaded", function () {
     var stage = new NGL.Stage( "viewport" );
-    window.addEventListener( "resize", function( event ){
-        stage.handleResize();
-    }, false );
-    var asdf = NGL.ColormakerRegistry.addScheme(function (params) {
+    var cuscolor = NGL.ColormakerRegistry.addScheme(function (params) {
       this.atomColor = function (atom) {
         return 0xFFFF00;
       };
     });
-    // Code for example: color/sstruc
+    window.addEventListener( "resize", function( event ){
+        stage.handleResize();
+    }, false );
+    stage.setSpin(true);
+    stage.mouseControls.add("drag-left+right", NGL.MouseActions.zoomDrag);
     stage.loadFile("assets/model/4ED5-PBLG5.pdb").then(function (o) {
       o.addRepresentation("cartoon", { color: "sstruc" })
-      o.addRepresentation("ball+stick", { sele: "ligand", color: asdf })
-      stage.setSpin(false);
+      o.addRepresentation("ball+stick", { sele: "ligand", color: cuscolor })
       o.autoView()
-
     })
   });
 </script>
 <div id="viewport" style="width:100%; height:800px;"></div>
-<button onclick=""
 </body>
 </html>
