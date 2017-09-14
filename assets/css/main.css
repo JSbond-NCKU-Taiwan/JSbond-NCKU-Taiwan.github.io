@@ -2599,7 +2599,7 @@
 	a.image {
 		overflow: hidden;
 	}
-
+		/*
 		a.image img {
 			-moz-transition: -moz-transform 0.2s ease;
 			-webkit-transition: -webkit-transform 0.2s ease;
@@ -2613,6 +2613,7 @@
 			-ms-transform: scale(1.075);
 			transform: scale(1.075);
 		}
+		*/
 
 /* List */
 
@@ -3481,6 +3482,7 @@
 		-ms-flex-shrink: 1;
 		flex-shrink: 1;
 		width: 100%;
+		/* background-color: #f7f7ed; */
 	}
 
 		#main > .inner {
