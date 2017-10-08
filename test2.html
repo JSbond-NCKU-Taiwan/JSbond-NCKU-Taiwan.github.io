@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv='Content-Type' content='text/html;charset=utf-8'></meta>
+    <link rel='stylesheet' type='text/css' href='http://www.x3dom.org/x3dom/release/x3dom.css'></link>
+    <script type='text/javascript' src='http://www.x3dom.org/x3dom/release/x3dom.js'></script>
+  </head>
+  <body>
+    <x3d id='someUniqueId' showStat='false' showLog='false' x='0px' y='0px' width='400px' height='400px'>
+      <scene DEF='scene'>
+        <group>
+          <directionalLight color='1 1 0.9' intensity='1.8' direction='0.5 -1.5 -1'></directionalLight>
+          <directionalLight color='1 1 0.9' direction='-0.5 1 0'></directionalLight>
+          <navigationInfo avatarSize='0.2 1.4 0.5' headlight='false'></navigationInfo>
+          <directionalLight color='0.6 0.6 0.8' direction='-1 0.5 2'></directionalLight>
+          <background groundAngle='1.5 1.6' groundColor='0.2 0.6 0.3 0.4 0.4 0.35 0.3 0.5 0.6' skyAngle='1.5' skyColor='0.5 0.7 1 0.7 1 0.9'></background>
+          <viewpoint description='Entry' orientation='0 1 0 -0.5' position='-4 2 10' fieldOfView='1'></viewpoint>
+          <viewpoint description='Vooraanzicht' position='3.5 1.7 13' fieldOfView='1'></viewpoint>
+          <viewpoint description='Woonkamer' position='2.5 1.5 -4.5' fieldOfView='1'></viewpoint>
+          <viewpoint description='Keuken' position='1.5 1.5 -1.7' fieldOfView='1'></viewpoint>
+          <viewpoint description='Achteraanzicht' orientation='0 1 0 3.14159' position='2.5 2.5 -20' fieldOfView='1'></viewpoint>
+          <viewpoint description='Bovenaanzicht' orientation='1 0 0 -1.5708' position='2.5 20 -4.5' fieldOfView='1'></viewpoint>
+          <transform DEF='vloer'>
+            <shape>
+              <appearance>
+                <material diffuseColor='1 0.5 0.3' shininess='0.1'></material>
+              </appearance>
+              <indexedFaceSet coordIndex='0 1 2 3 -1 0 3 2 1 -1'>
+                <coordinate point='0.14 0 -0.14 5.54 0 -0.14 5.54 0 -8.86 0.14 0 -8.86'></coordinate>
+              </indexedFaceSet>
+            </shape>
+          </transform>
+          <transform DEF='drempelvoor' translation='3.805 0.02 -0.14'>
+            <shape>
+              <appearance>
+                <material diffuseColor='0.4 0.4 0.4' shininess='0.1'></material>
+              </appearance>
+              <box size='1.23 0.04 0.3'></box>
+            </shape>
+          </transform>
+          <transform DEF='drempelachter' translation='1.725 0.02 -8.86'>
+            <shape>
+              <appearance>
+                <material diffuseColor='0.4 0.4 0.4' shininess='0.1'></material>
+              </appearance>
+              <box size='1.05 0.04 0.3'></box>
+            </shape>
+          </transform>
+          <transform translation='0.63 1.35 -3.395'>
+            <shape>
+              <appearance DEF='AOPT_Appearance_20386352'>
+                <material diffuseColor='1 0.9 0.7' shininess='0.1'></material>
+              </appearance>
+              <box size='0.7 2.7 0.07'></box>
+            </shape>
+          </transform>
+          <transform translation='2.485 1.35 -3.395'>
+            <shape>
+              <appearance USE='AOPT_Appearance_20386352'></appearance>
+              <box size='1.41 2.7 0.07'></box>
+            </shape>
+          </transform>
+          <transform translation='4.205 1.35 -3.395'>
+            <shape>
+              <appearance USE='AOPT_Appearance_20386352'></appearance>
+              <box size='0.43 2.7 0.07'></box>
+            </shape>
+          </transform>
+          <transform translation='4.87 1.4 -4.395'>
+            <shape>
+              <appearance USE='AOPT_Appearance_20386352'></appearance>
+              <box size='1.06 2.8 0.07'></box>
+            </shape>
+          </transform>
+          <transform translation='3.155 1.35 -1.42'>
+            <shape>
+              <appearance USE='AOPT_Appearance_20386352'></appearance>
+              <box size='0.07 2.7 2.28'></box>
+            </shape>
+          </transform>
+          <transform translation='4.91 1.4 -2.325'>
+            <shape>
+              <appearance USE='AOPT_Appearance_20386352'></appearance>
+              <box size='0.98 2.8 0.07'></box>
+            </shape>
+          </transform>
+          <transform translation='4.91 1.35 -1.515'>
+            <shape>
+              <appearance USE='AOPT_Appearance_20386352'></appearance>
+              <box size='0.98 2.7 0.07'></box>
+            </shape>
+          </transform>
+          <transform translation='4.455 1.35 -0.48'>
+            <shape>
+              <appearance USE='AOPT_Appearance_20386352'></appearance>
+              <box size='0.07 2.7 0.4'></box>
+            </shape>
+          </transform>
+          <transform DEF='stukmuur9' translation='4.7 1.35 -1.92'>
+            <shape>
+              <appearance USE='AOPT_Appearance_20386352'></appearance>
+              <box size='0.07 2.7 0.74'></box>
+            </shape>
+          </transform>
+          <transform>
+            <shape>
+              <appearance>
+                <material diffuseColor='1 0.9 0.7' shininess='0.1'></material>
+              </appearance>
+              <indexedFaceSet solid='false' coordIndex='0 4 12 15 -1 0 15 12 4 -1 0 15 14 63 -1 0 63 14 15 -1 14 13 65 63 -1 4 12 13 7 -1 13 7 6 65 -1 6 11 10 65 -1 5 8 11 6 -1 5 8 9 1 -1 1 9 10 65 -1 0 63 67 24 -1 67 24 33 71 -1 28 29 30 31 -1 28 31 73 69 -1 28 69 65 1 -1 63 65 66 64 -1 65 69 70 66 -1 63 67 68 64 -1 69 73 74 70 -1 67 71 72 68 -1 5 6 37 36 -1 6 7 38 37 -1 4 35 38 7 -1 12 39 40 13 -1 13 40 41 14 -1 14 41 42 15 -1 15 42 39 12 -1 8 43 44 9 -1 9 44 45 10 -1 10 45 46 11 -1 11 46 43 8 -1 29 53 54 30 -1 30 54 55 31 -1 31 55 74 73 -1 33 57 72 71 -1'>
+                <coordinate point='0.28 0 -0.28 5.4 0 -0.28 5.4 5.4 -0.28 0.28 5.4 -0.28 3.19 0 -0.28 4.42 0 -0.28 4.42 2.3 -0.28 3.19 2.3 -0.28 4.84 1.6 -0.28 5.04 1.6 -0.28 5.04 2.3 -0.28 4.84 2.3 -0.28 2.6 0.9 -0.28 2.6 2.3 -0.28 0.6 2.3 -0.28 0.6 0.9 -0.28 0.6 3.6 -0.28 1.5 3.6 -0.28 1.5 5 -0.28 4.42 5 -0.28 4.42 5.4 -0.28 0.6 5.4 -0.28 0.28 8.55 -3.15 0.28 2.7 -8.72 0.28 0 -8.72 5.4 8.55 -3.15 5.4 5.4 -6.3 5.4 5.4 -8.72 5.4 0 -8.72 2.25 0 -8.72 2.25 0.6 -8.72 4.8 0.6 -8.72 4.8 5.4 -8.72 1.2 0 -8.72 1.2 2.7 -8.72 3.19 0 -0.14 4.42 0 -0.14 4.42 2.3 -0.14 3.19 2.3 -0.14 2.6 0.9 -0.14 2.6 2.3 -0.14 0.6 2.3 -0.14 0.6 0.9 -0.14 4.84 1.6 -0.14 5.04 1.6 -0.14 5.04 2.3 -0.14 4.84 2.3 -0.14 0.6 3.6 -0.14 1.5 3.6 -0.14 1.5 5 -0.14 4.42 5 -0.14 4.42 5.4 -0.14 0.6 5.4 -0.14 2.25 0 -8.86 2.25 0.6 -8.86 4.8 0.6 -8.86 4.8 5.4 -8.86 1.2 0 -8.86 1.2 2.7 -8.86 0.28 5.4 0 5.4 5.4 0 0.28 5.4 -6.3 0.28 2.7 -9 0.28 2.7 -0.28 0.14 2.7 -0.14 5.4 2.7 -0.28 5.54 2.7 -0.14 0.28 2.7 -8.72 0.14 2.7 -8.86 5.4 2.7 -8.72 5.54 2.7 -8.86 1.2 2.7 -8.72 1.2 2.7 -8.86 4.8 2.7 -8.72 4.8 2.7 -8.86'></coordinate>
+              </indexedFaceSet>
+            </shape>
+          </transform>
+          <transform>
+            <shape>
+              <appearance DEF='AOPT_Appearance_20501632'>
+                <material diffuseColor='0.8 0.4 0.3' shininess='0.1'></material>
+              </appearance>
+              <indexedFaceSet solid='false' coordIndex='0 4 12 15 -1 0 15 14 59 -1 14 13 61 59 -1 4 7 13 12 -1 13 11 61 -1 11 10 61 -1 9 1 61 10 -1 5 1 9 8 -1 5 8 11 6 -1 0 59 63 24 -1 1 28 65 61 -1 28 29 30 31 -1 28 31 69 65 -1 33 24 63 67 -1 5 6 37 36 -1 6 7 38 37 -1 4 35 38 7 -1 12 13 40 39 -1 13 14 41 40 -1 15 42 41 14 -1 12 39 42 15 -1 8 9 44 43 -1 9 10 45 44 -1 10 11 46 45 -1 11 8 43 46 -1 29 53 54 30 -1 30 54 55 31 -1 31 55 70 69 -1 33 67 68 57 -1 59 61 62 60 -1 59 60 64 63 -1 61 65 66 62 -1 65 69 70 66 -1 64 68 67 63 -1'>
+                <coordinate point='0 0 0 5.68 0 0 5.68 5.4 0 0 5.4 0 3.19 0 0 4.42 0 0 4.42 2.3 0 3.19 2.3 0 4.84 1.6 0 5.04 1.6 0 5.04 2.3 0 4.84 2.3 0 2.6 0.9 0 2.6 2.3 0 0.6 2.3 0 0.6 0.9 0 0.6 3.6 0 1.5 3.6 0 1.5 5 0 4.42 5 0 4.42 5.4 0 0.6 5.4 0 0 8.555 -3.15 0 2.7 -9 0 0 -9 5.68 8.555 -3.15 5.68 5.4 -6.3 5.68 5.4 -9 5.68 0 -9 2.25 0 -9 2.25 0.6 -9 4.8 0.6 -9 4.8 5.4 -9 1.2 0 -9 1.2 2.7 -9 3.19 0 -0.14 4.42 0 -0.14 4.42 2.3 -0.14 3.19 2.3 -0.14 2.6 0.9 -0.14 2.6 2.3 -0.14 0.6 2.3 -0.14 0.6 0.9 -0.14 4.84 1.6 -0.14 5.04 1.6 -0.14 5.04 2.3 -0.14 4.84 2.3 -0.14 0.6 3.6 -0.14 1.5 3.6 -0.14 1.5 5 -0.14 4.42 5 -0.14 4.42 5.4 -0.14 0.6 5.4 -0.14 2.25 0 -8.86 2.25 0.6 -8.86 4.8 0.6 -8.86 4.8 5.4 -8.86 1.2 0 -8.86 1.2 2.7 -8.86 0 2.7 0 0.14 2.7 -0.14 5.68 2.7 0 5.54 2.7 -0.14 0 2.7 -9 0.14 2.7 -8.86 5.68 2.7 -9 5.54 2.7 -8.86 1.2 2.7 -9 1.2 2.7 -8.86 4.8 2.7 -9 4.8 2.7 -8.86'></coordinate>
+              </indexedFaceSet>
+            </shape>
+          </transform>
+          <transform translation='3.48 0 7.8'>
+            <transform DEF='schuurvloer'>
+              <shape>
+                <appearance>
+                  <material diffuseColor='1 0.5 0.3' shininess='0.1'></material>
+                </appearance>
+                <indexedFaceSet solid='false' coordIndex='0 1 2 3 -1'>
+                  <coordinate point='0.1 0 -0.1 2.1 0 -0.1 2.1 0 -3.1 0.1 0 -3.1'></coordinate>
+                </indexedFaceSet>
+              </shape>
+            </transform>
+            <transform translation='1.1 1.3 -0.05'>
+              <shape>
+                <appearance USE='AOPT_Appearance_20501632'></appearance>
+                <box size='2.2 2.6 0.1'></box>
+              </shape>
+            </transform>
+            <transform translation='1.1 1.3 -3.15'>
+              <shape>
+                <appearance USE='AOPT_Appearance_20501632'></appearance>
+                <box size='2.2 2.6 0.1'></box>
+              </shape>
+            </transform>
+            <transform translation='0.05 1.3 -0.75'>
+              <shape>
+                <appearance USE='AOPT_Appearance_20501632'></appearance>
+                <box size='0.1 2.6 1.3'></box>
+              </shape>
+            </transform>
+            <transform translation='0.05 1.3 -2.725'>
+              <shape>
+                <appearance USE='AOPT_Appearance_20501632'></appearance>
+                <box size='0.1 2.6 0.75'></box>
+              </shape>
+            </transform>
+            <transform translation='2.15 1.3 -1.6'>
+              <shape>
+                <appearance USE='AOPT_Appearance_20501632'></appearance>
+                <box size='0.1 2.6 3'></box>
+              </shape>
+            </transform>
+            <transform translation='0.05 2.38 -1.875'>
+              <shape>
+                <appearance>
+                  <material diffuseColor='0.3 0.4 0.7' shininess='0.1'></material>
+                </appearance>
+                <box size='0.05 0.44 0.85'></box>
+              </shape>
+            </transform>
+            <transform translation='0.05 0.02 -1.875'>
+              <transform translation='0 1.3 0.45'>
+                <shape DEF='deurpost'>
+                  <appearance DEF='grijs'>
+                    <material diffuseColor='0.4 0.4 0.4' shininess='0.1'></material>
+                  </appearance>
+                  <box size='0.05 2.56 0.05'></box>
+                </shape>
+              </transform>
+              <transform translation='0 2.135 0'>
+                <shape>
+                  <appearance USE='grijs'></appearance>
+                  <box size='0.05 0.05 0.85'></box>
+                </shape>
+              </transform>
+              <transform translation='0 1.3 -0.45'>
+                <shape USE='deurpost'></shape>
+              </transform>
+              <shape>
+                <appearance USE='grijs'></appearance>
+                <box size='0.1 0.04 0.95'></box>
+              </shape>
+            </transform>
+          </transform>
+          <transform DEF='trapbeneden' translation='4.42 0 -3.36'>
+            <shape>
+              <appearance>
+                <material diffuseColor='1 0.5 0.3' shininess='0.1'></material>
+              </appearance>
+              <indexedFaceSet DEF='trap' solid='false' coordIndex='28 1 2 31 -1 29 4 46 -1 32 5 16 -1 33 6 17 -1 34 7 18 -1 35 8 19 -1 36 9 20 -1 37 10 21 -1 38 11 22 -1 39 12 23 -1 40 13 24 -1 41 14 25 -1 42 15 26 -1 0 28 31 3 -1 0 44 1 28 -1 3 31 2 45 -1 2 1 29 30 -1 46 4 32 16 -1 16 5 33 17 -1 17 6 34 18 -1 18 7 35 19 -1 19 8 36 20 -1 20 9 37 21 -1 21 10 38 22 -1 22 11 39 23 -1 23 12 40 24 -1 24 13 41 25 -1 25 14 42 26 -1 26 15 43 27 -1'>
+                <coordinate point='-0.2 0 1 0 0.2 1 0 0.2 0 -0.2 0 0 0.28 0.4 1 0.6 0.6 1 0.98 0.8 1 0.98 1 0.45 0.98 1.2 0.25 0.98 1.4 0 0.98 1.6 -0.25 0.98 1.8 -0.45 0.98 2 -1 0.6 2.2 -1 0.28 2.4 -1 0 2.6 -1 0 0.6 0 0 0.8 0 0 1 0 0 1.2 0 0 1.4 0 0 1.6 0 0 1.8 0 0 2 0 0 2.2 0 0 2.4 0 0 2.6 0 0 2.8 0 -0.2 0.2 1 0 0.4 1 0 0.4 0 -0.2 0.2 0 0.28 0.6 1 0.6 0.8 1 0.98 1 1 0.98 1.2 0.45 0.98 1.4 0.25 0.98 1.6 0 0.98 1.8 -0.25 0.98 2 -0.45 0.98 2.2 -1 0.6 2.4 -1 0.28 2.6 -1 0 2.8 -1 0 0 1 0 0 0 0 0.4 0'></coordinate>
+              </indexedFaceSet>
+            </shape>
+          </transform>
+          <transform translation='1.38 0 -3.395'>
+            <group DEF='deurgroep'>
+              <transform DEF='AOPT_Transform_20659168' translation='0 2.035 0'>
+                <shape>
+                  <appearance DEF='AOPT_Appearance_20664384'>
+                    <material diffuseColor='0.95 0.95 0.9' shininess='0.1'></material>
+                  </appearance>
+                  <box size='0.8 0.05 0.05'></box>
+                </shape>
+              </transform>
+              <transform DEF='ruitje' translation='0 2.38 0'>
+                <shape>
+                  <appearance>
+                    <material diffuseColor='0.6 0.6 0.9' shininess='0.8' specularColor='1 1 1' transparency='0.7'></material>
+                  </appearance>
+                  <box size='0.8 0.64 0.01'></box>
+                </shape>
+              </transform>
+              <transform DEF='deur' center='-0.4 0 0' translation='0 1.005 0'>
+                <touchSensor DEF='klikopdeur'></touchSensor>
+                <timeSensor DEF='TimeSource' cycleInterval='20'></timeSensor>
+                <orientationInterpolator DEF='Deuropen' key='0 0.025 0.05 0.95 0.975 1' keyValue='0 1 0 0 0 1 0 -1 0 1 0 -2 0 1 0 -2 0 1 0 -1 0 1 0 0'></orientationInterpolator>
+                <transform DEF='AOPT_Transform_20693168' rotation='0 0 1 1.5708' translation='0.35 0 0.035'>
+                  <shape DEF='AOPT_Shape_20696032'>
+                    <appearance DEF='AOPT_Appearance_20698224'>
+                      <material diffuseColor='0.4 0.4 0.5' shininess='0.8' specularColor='0.4 0.4 0.5'></material>
+                    </appearance>
+                    <indexedFaceSet coordIndex='2 3 4 5 -1 2 5 4 3 -1 4 5 11 10 -1 4 10 11 5 -1 0 1 7 6 -1 0 6 7 1 -1 6 7 8 9 -1 6 9 8 7 -1 8 9 10 11 -1 8 11 10 9 -1 0 6 4 3 -1 0 3 4 6 -1 6 9 10 4 -1 6 4 10 9 -1 1 2 5 7 -1 1 7 5 2 -1 7 5 11 8 -1 7 8 11 5 -1'>
+                      <coordinate point='-0.015 0.02 0 0.015 0.02 0 0.02 -0.02 0 -0.02 -0.02 0 -0.01 -0.015 0.06 0.01 -0.015 0.06 -0.01 0.015 0.03 0.01 0.015 0.03 0.005 0.1 0.035 -0.005 0.1 0.035 -0.005 0.1 0.055 0.005 0.1 0.055'></coordinate>
+                    </indexedFaceSet>
+                  </shape>
+                  <transform rotation='0 1 0 3.14159' translation='0 0 -0.07'>
+                    <shape USE='AOPT_Shape_20696032'></shape>
+                  </transform>
+                  <transform translation='-0.03 0 -0.005'>
+                    <shape DEF='AOPT_Shape_20715536'>
+                      <appearance USE='AOPT_Appearance_20698224'></appearance>
+                      <box size='0.18 0.07 0.01'></box>
+                    </shape>
+                  </transform>
+                  <transform translation='-0.03 0 -0.065'>
+                    <shape USE='AOPT_Shape_20715536'></shape>
+                  </transform>
+                </transform>
+                <shape DEF='AOPT_Shape_20441728'>
+                  <appearance DEF='AOPT_Appearance_20443920'>
+                    <material shininess='0.1'></material>
+                  </appearance>
+                  <box size='0.8 2 0.05'></box>
+                </shape>
+              </transform>
+            </group>
+          </transform>
+          <transform rotation='0 1 0 1.5708' translation='3.155 0 -2.96'>
+            <transform USE='AOPT_Transform_20659168'></transform>
+            <transform USE='ruitje'></transform>
+            <transform DEF='deurkeukengang' center='-0.4 0 0' translation='0 1.005 0'>
+              <touchSensor DEF='klikopdeur2'></touchSensor>
+              <timeSensor DEF='TimeSource2' cycleInterval='20'></timeSensor>
+              <orientationInterpolator DEF='Deuropen2' key='0 0.025 0.05 0.95 0.975 1' keyValue='0 1 0 0 0 1 0 -1 0 1 0 -2 0 1 0 -2 0 1 0 -1 0 1 0 0'></orientationInterpolator>
+              <transform USE='AOPT_Transform_20693168'></transform>
+              <shape USE='AOPT_Shape_20441728'></shape>
+            </transform>
+          </transform>
+          <transform translation='3.59 0 -3.395'>
+            <transform USE='AOPT_Transform_20659168'></transform>
+            <transform USE='ruitje'></transform>
+            <transform DEF='deurwoonkamergang' center='-0.4 0 0' translation='0 1.005 0'>
+              <touchSensor DEF='klikopdeur3'></touchSensor>
+              <timeSensor DEF='TimeSource3' cycleInterval='20'></timeSensor>
+              <orientationInterpolator DEF='Deuropen3' key='0 0.025 0.05 0.95 0.975 1' keyValue='0 1 0 0 0 1 0 1 0 1 0 2 0 1 0 2 0 1 0 1 0 1 0 0'></orientationInterpolator>
+              <transform USE='AOPT_Transform_20693168'></transform>
+              <shape USE='AOPT_Shape_20441728'></shape>
+            </transform>
+          </transform>
+          <transform rotation='0 1 0 -1.5708' translation='4.395 0 -3.895'>
+            <transform DEF='dwarslatafw' translation='0 2.035 0'>
+              <shape>
+                <appearance USE='AOPT_Appearance_20664384'></appearance>
+                <box size='0.93 0.05 0.05'></box>
+              </shape>
+            </transform>
+            <transform DEF='ruitjeafw' translation='0 2.38 0'>
+              <shape>
+                <appearance USE='AOPT_Appearance_20664384'></appearance>
+                <box size='0.93 0.64 0.01'></box>
+              </shape>
+            </transform>
+            <transform DEF='deurwoonkamertrapkast' center='-0.4 0 0' translation='0 1.005 0'>
+              <touchSensor DEF='klikopdeur4'></touchSensor>
+              <timeSensor DEF='TimeSource4' cycleInterval='20'></timeSensor>
+              <orientationInterpolator DEF='Deuropen4' key='0 0.025 0.05 0.95 0.975 1' keyValue='0 1 0 0 0 1 0 -1 0 1 0 -2 0 1 0 -2 0 1 0 -1 0 1 0 0'></orientationInterpolator>
+              <transform USE='AOPT_Transform_20693168'></transform>
+              <shape>
+                <appearance USE='AOPT_Appearance_20443920'></appearance>
+                <box size='0.93 2 0.05'></box>
+              </shape>
+            </transform>
+          </transform>
+          <transform rotation='0 1 0 -1.5708' translation='4.455 0 -1.92'>
+            <transform DEF='dwarslatafw2' translation='0 2.035 0'>
+              <shape>
+                <appearance USE='AOPT_Appearance_20664384'></appearance>
+                <box size='0.74 0.05 0.05'></box>
+              </shape>
+            </transform>
+            <transform DEF='ruitjeafw2' translation='0 2.38 0'>
+              <shape>
+                <appearance USE='AOPT_Appearance_20664384'></appearance>
+                <box size='0.74 0.64 0.01'></box>
+              </shape>
+            </transform>
+            <transform DEF='deurgangmeterkast' center='-0.4 0 0' translation='0 1.005 0'>
+              <touchSensor DEF='klikopdeur5'></touchSensor>
+              <timeSensor DEF='TimeSource5' cycleInterval='20'></timeSensor>
+              <orientationInterpolator DEF='Deuropen5' key='0 0.025 0.05 0.95 0.975 1' keyValue='0 1 0 0 0 1 0 -0.7 0 1 0 -1.5 0 1 0 -1.5 0 1 0 -0.7 0 1 0 0'></orientationInterpolator>
+              <transform DEF='deurklinkafw' rotation='0 0 1 1.5708' translation='0.32 0 0.035'>
+                <shape USE='AOPT_Shape_20696032'></shape>
+                <transform rotation='0 1 0 3.14159' translation='0 0 -0.07'>
+                  <shape USE='AOPT_Shape_20696032'></shape>
+                </transform>
+                <transform translation='-0.03 0 -0.005'>
+                  <shape DEF='AOPT_Shape_20886976'>
+                    <appearance USE='AOPT_Appearance_20698224'></appearance>
+                    <box size='0.18 0.07 0.01'></box>
+                  </shape>
+                </transform>
+                <transform translation='-0.03 0 -0.065'>
+                  <shape USE='AOPT_Shape_20886976'></shape>
+                </transform>
+              </transform>
+              <shape>
+                <appearance USE='AOPT_Appearance_20443920'></appearance>
+                <box size='0.74 2 0.05'></box>
+              </shape>
+            </transform>
+          </transform>
+          <transform rotation='0 1 0 -1.5708' translation='4.455 0 -1.08'>
+            <transform USE='AOPT_Transform_20659168'></transform>
+            <transform USE='ruitje'></transform>
+            <transform DEF='deurtoiletgang' center='-0.4 0 0' translation='0 1.005 0'>
+              <touchSensor DEF='klikopdeur6'></touchSensor>
+              <timeSensor DEF='TimeSource6' cycleInterval='20'></timeSensor>
+              <orientationInterpolator DEF='Deuropen6' key='0 0.025 0.05 0.95 0.975 1' keyValue='0 1 0 0 0 1 0 -1 0 1 0 -2 0 1 0 -2 0 1 0 -1 0 1 0 0'></orientationInterpolator>
+              <transform USE='AOPT_Transform_20693168'></transform>
+              <shape USE='AOPT_Shape_20441728'></shape>
+            </transform>
+          </transform>
+          <transform DEF='voordeur' center='1.11 0 0' translation='3.25 0.05 -0.14'>
+            <shape>
+              <appearance>
+                <material shininess='0.1'></material>
+              </appearance>
+              <indexedFaceSet coordIndex='0 1 5 4 -1 1 2 6 5 -1 6 2 3 7 -1 0 4 7 3 -1 1 0 8 9 -1 3 2 10 11 -1 0 3 11 8 -1 2 1 9 10 -1 5 6 14 13 -1 4 5 13 12 -1 6 7 15 14 -1 7 4 12 15 -1 9 8 12 13 -1 10 9 13 14 -1 11 10 14 15 -1 12 8 11 15 -1'>
+                <coordinate point='0 0 0.025 1.11 0 0.025 1.11 2.19 0.025 0 2.19 0.025 0.71 0.49 0.025 0.91 0.49 0.025 0.91 1.99 0.025 0.71 1.99 0.025 0 0 -0.025 1.11 0 -0.025 1.11 2.19 -0.025 0 2.19 -0.025 0.71 0.49 -0.025 0.91 0.49 -0.025 0.91 1.99 -0.025 0.71 1.99 -0.025'></coordinate>
+              </indexedFaceSet>
+            </shape>
+            <touchSensor DEF='klikopvoordeur'></touchSensor>
+            <timeSensor DEF='TimeSourcevoor' cycleInterval='20'></timeSensor>
+            <orientationInterpolator DEF='VoorDeuropen' key='0 0.025 0.05 0.95 0.975 1' keyValue='0 1 0 0 0 1 0 -0.7 0 1 0 -1.5 0 1 0 -1.5 0 1 0 -0.7 0 1 0 0'></orientationInterpolator>
+            <transform DEF='deurgreep' translation='0.15 0.9 0.067'>
+              <shape>
+                <appearance>
+                  <material diffuseColor='0.4 0.4 0.4' shininess='0.8' specularColor='0.9 0.9 0.9'></material>
+                </appearance>
+                <box size='0.2 0.2 0.004'></box>
+              </shape>
+            </transform>
+            <transform DEF='steunblokje' translation='0.15 0.9 0.045'>
+              <shape>
+                <appearance>
+                  <material diffuseColor='0.4 0.4 0.4' shininess='0.8' specularColor='0.9 0.9 0.9'></material>
+                </appearance>
+                <box size='0.14 0.14 0.04'></box>
+              </shape>
+            </transform>
+            <transform DEF='ruitjeindeur' translation='0.81 1.24 0'>
+              <shape>
+                <appearance>
+                  <material diffuseColor='0.6 0.6 0.9' shininess='0.8' specularColor='1 1 1' transparency='0.7'></material>
+                </appearance>
+                <box size='0.2 1.5 0.01'></box>
+              </shape>
+            </transform>
+          </transform>
+          <transform DEF='achterdeur' translation='1.26 0.05 -8.86'>
+            <shape>
+              <appearance DEF='AOPT_Appearance_20995552'>
+                <material shininess='0.1'></material>
+              </appearance>
+              <indexedFaceSet DEF='deurInd' coordIndex='0 1 5 4 -1 1 2 6 5 -1 6 2 3 7 -1 0 4 7 3 -1 1 0 8 9 -1 3 2 10 11 -1 0 3 11 8 -1 2 1 9 10 -1 5 6 14 13 -1 4 5 13 12 -1 6 7 15 14 -1 7 4 12 15 -1 9 8 12 13 -1 10 9 13 14 -1 11 10 14 15 -1 12 8 11 15 -1'>
+                <coordinate point='0.93 0 -0.025 0 0 -0.025 0 2.09 -0.025 0.93 2.09 -0.025 0.765 0.6 -0.025 0.165 0.6 -0.025 0.165 1.9 -0.025 0.765 1.9 -0.025 0.93 0 0.025 0 0 0.025 0 2.09 0.025 0.93 2.09 0.025 0.765 0.6 0.025 0.165 0.6 0.025 0.165 1.9 0.025 0.765 1.9 0.025'></coordinate>
+              </indexedFaceSet>
+            </shape>
+            <touchSensor DEF='klikopachterdeur'></touchSensor>
+            <timeSensor DEF='TimeSourceachter' cycleInterval='20'></timeSensor>
+            <orientationInterpolator DEF='achterDeuropen' key='0 0.025 0.05 0.95 0.975 1' keyValue='0 1 0 0 0 1 0 0.7 0 1 0 1.5 0 1 0 1.5 0 1 0 0.7 0 1 0 0'></orientationInterpolator>
+            <transform translation='0.5 1 0'>
+              <transform DEF='AOPT_Transform_21013888' rotation='0 0 1 1.5708' translation='0.35 0 0.035'>
+                <shape DEF='AOPT_Shape_21017008'>
+                  <appearance DEF='AOPT_Appearance_21019136'>
+                    <material diffuseColor='0.4 0.4 0.5' shininess='0.8' specularColor='0.4 0.4 0.5'></material>
+                  </appearance>
+                  <indexedFaceSet coordIndex='2 3 4 5 -1 2 5 4 3 -1 4 5 11 10 -1 4 10 11 5 -1 0 1 7 6 -1 0 6 7 1 -1 6 7 8 9 -1 6 9 8 7 -1 8 9 10 11 -1 8 11 10 9 -1 0 6 4 3 -1 0 3 4 6 -1 6 9 10 4 -1 6 4 10 9 -1 1 2 5 7 -1 1 7 5 2 -1 7 5 11 8 -1 7 8 11 5 -1'>
+                    <coordinate point='-0.015 0.02 0 0.015 0.02 0 0.02 -0.02 0 -0.02 -0.02 0 -0.01 -0.015 0.06 0.01 -0.015 0.06 -0.01 0.015 0.03 0.01 0.015 0.03 0.005 0.1 0.035 -0.005 0.1 0.035 -0.005 0.1 0.055 0.005 0.1 0.055'></coordinate>
+                  </indexedFaceSet>
+                </shape>
+                <transform rotation='0 1 0 3.14159' translation='0 0 -0.07'>
+                  <shape USE='AOPT_Shape_21017008'></shape>
+                </transform>
+                <transform translation='-0.03 0 -0.005'>
+                  <shape DEF='AOPT_Shape_21036288'>
+                    <appearance USE='AOPT_Appearance_21019136'></appearance>
+                    <box size='0.18 0.07 0.01'></box>
+                  </shape>
+                </transform>
+                <transform translation='-0.03 0 -0.065'>
+                  <shape USE='AOPT_Shape_21036288'></shape>
+                </transform>
+              </transform>
+            </transform>
+            <transform DEF='ruitindeur' translation='0.465 1.25 0'>
+              <shape>
+                <appearance>
+                  <material diffuseColor='0.6 0.6 0.9' shininess='0.8' specularColor='1 1 1' transparency='0.7'></material>
+                </appearance>
+                <box size='0.6 1.3 0.01'></box>
+              </shape>
+            </transform>
+          </transform>
+          <transform DEF='schuurdeur' rotation='0 1 0 1.5708' translation='3.53 0.05 6.35'>
+            <touchSensor DEF='klikopschuurdeur'></touchSensor>
+            <timeSensor DEF='TimeSourceschuur' cycleInterval='20'></timeSensor>
+            <orientationInterpolator DEF='schuurDeuropen' key='0 0.025 0.05 0.95 0.975 1' keyValue='0 1 0 1.5708 0 1 0 2.4 0 1 0 3.4 0 1 0 3.4 0 1 0 2.4 0 1 0 1.5708'></orientationInterpolator>
+            <transform scale='0.913978 1 1'>
+              <shape>
+                <appearance USE='AOPT_Appearance_20995552'></appearance>
+                <indexedFaceSet USE='deurInd'></indexedFaceSet>
+              </shape>
+            </transform>
+            <transform USE='ruitindeur'></transform>
+            <transform translation='0.43 1 0'>
+              <transform USE='AOPT_Transform_21013888'></transform>
+            </transform>
+          </transform>
+          <transform translation='0.625 1.6 -0.14'>
+            <shape>
+              <appearance DEF='AOPT_Appearance_21090752'>
+                <material diffuseColor='0.95 0.95 0.9' shininess='0.1'></material>
+              </appearance>
+              <box size='0.05 1.3 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='2.575 1.6 -0.14'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21090752'></appearance>
+              <box size='0.05 1.3 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='1.475 1.6 -0.14'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21090752'></appearance>
+              <box size='0.05 1.3 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='1.725 1.6 -0.14'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21090752'></appearance>
+              <box size='0.05 1.3 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='1.6 0.925 -0.14'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21090752'></appearance>
+              <box size='2 0.05 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='1.6 2.275 -0.14'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21090752'></appearance>
+              <box size='2 0.05 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='4.865 1.95 -0.14'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21090752'></appearance>
+              <box size='0.05 0.7 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='5.015 1.95 -0.14'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21090752'></appearance>
+              <box size='0.05 0.7 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='4.94 1.625 -0.14'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21090752'></appearance>
+              <box size='0.1 0.05 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='4.94 2.275 -0.14'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21090752'></appearance>
+              <box size='0.1 0.05 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='3.215 1.17 -0.14'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21090752'></appearance>
+              <box size='0.05 2.26 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='4.395 1.17 -0.14'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21090752'></appearance>
+              <box size='0.05 2.26 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='3.805 2.275 -0.14'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21090752'></appearance>
+              <box size='1.13 0.05 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='3.215 1.65 -8.86'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21090752'></appearance>
+              <box size='0.05 2.1 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='4.775 1.65 -8.86'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21090752'></appearance>
+              <box size='0.05 2.1 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='3.995 2.45 -8.86'>
+            <shape>
+              <appearance>
+                <material diffuseColor='0.3 0.4 0.7' shininess='0.1'></material>
+              </appearance>
+              <box size='1.51 0.5 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='3.995 0.625 -8.86'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21090752'></appearance>
+              <box size='1.51 0.05 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='3.995 2.175 -8.86'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21090752'></appearance>
+              <box size='1.51 0.05 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='2.72 0.625 -8.86'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21090752'></appearance>
+              <box size='0.94 0.05 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='2.195 2.675 -8.86'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21090752'></appearance>
+              <box size='1.99 0.05 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='1.725 2.175 -8.86'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21090752'></appearance>
+              <box size='1 0.05 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='1.225 1.345 -8.86'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21090752'></appearance>
+              <box size='0.05 2.61 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='2.225 1.345 -8.86'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21090752'></appearance>
+              <box size='0.05 2.61 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='3.565 1.4 -8.86'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21090752'></appearance>
+              <box size='0.05 1.5 0.05'></box>
+            </shape>
+          </transform>
+          <transform translation='2.72 1.65 -8.86'>
+            <shape>
+              <appearance DEF='AOPT_Appearance_21371904'>
+                <material diffuseColor='0.6 0.6 0.9' shininess='0.8' specularColor='1 1 1' transparency='0.7'></material>
+              </appearance>
+              <box size='0.94 2 0.01'></box>
+            </shape>
+          </transform>
+          <transform translation='1.05 1.6 -0.14'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21371904'></appearance>
+              <box size='0.8 1.3 0.01'></box>
+            </shape>
+          </transform>
+          <transform translation='2.15 1.6 -0.14'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21371904'></appearance>
+              <box size='0.8 1.3 0.01'></box>
+            </shape>
+          </transform>
+          <transform translation='1.6 1.6 -0.14'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21371904'></appearance>
+              <box size='0.2 1.3 0.01'></box>
+            </shape>
+          </transform>
+          <transform translation='4.94 1.95 -0.14'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21371904'></appearance>
+              <box size='0.1 0.6 0.01'></box>
+            </shape>
+          </transform>
+          <transform translation='4.17 1.4 -8.86'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21371904'></appearance>
+              <box size='1.16 1.5 0.01'></box>
+            </shape>
+          </transform>
+          <transform translation='3.39 1.4 -8.86'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21371904'></appearance>
+              <box size='0.3 1.5 0.01'></box>
+            </shape>
+          </transform>
+          <transform translation='1.725 2.425 -8.86'>
+            <shape>
+              <appearance USE='AOPT_Appearance_21371904'></appearance>
+              <box size='0.95 0.45 0.01'></box>
+            </shape>
+          </transform>
+          <transform DEF='boven'>
+            <transform translation='0.15 2.95 0.3'>
+              <transform rotation='0 1 0 3.14159'>
+                <shape>
+                  <appearance DEF='groen'>
+                    <material ambientIntensity='1' diffuseColor='0 1 0' emissiveColor='0 1 0' shininess='0.1'></material>
+                  </appearance>
+                  <indexedFaceSet DEF='pijl' solid='false' coordIndex='0 1 2 -1'>
+                    <coordinate point='0 0 0 0.2 0.2 0 0.2 -0.2 0'></coordinate>
+                  </indexedFaceSet>
+                </shape>
+              </transform>
+              <touchSensor DEF='schuifboven'></touchSensor>
+            </transform>
+            <transform translation='5.48 2.95 0.3'>
+              <shape>
+                <appearance DEF='rood'>
+                  <material ambientIntensity='1' diffuseColor='1 0 0' emissiveColor='1 0 0' shininess='0.1'></material>
+                </appearance>
+                <indexedFaceSet USE='pijl'></indexedFaceSet>
+              </shape>
+              <touchSensor DEF='schuifboven2'></touchSensor>
+            </transform>
+            <viewpoint description='Ouderslaapkamer' position='2.5 3.75 -2.5' fieldOfView='1'></viewpoint>
+            <viewpoint description='Tweede slaapkamer' position='2.5 3.75 -5' fieldOfView='1'></viewpoint>
+            <viewpoint description='Kinderkamer' position='4.5 3.75 -7' fieldOfView='1'></viewpoint>
+            <viewpoint description='Badkamer' position='4.5 3.75 -1.5' fieldOfView='1'></viewpoint>
+            <transform translation='4.6 2.62 6.2'>
+              <shape>
+                <appearance>
+                  <material ambientIntensity='0' diffuseColor='0.2 0.2 0.2' shininess='0'></material>
+                  <imageTexture url='""'></imageTexture>
+                </appearance>
+                <box size='2.24 0.04 3.24'></box>
+              </shape>
+            </transform>
+            <transform DEF='plafond'>
+              <shape>
+                <appearance>
+                  <material diffuseColor='1 1 1' shininess='0.1'></material>
+                </appearance>
+                <indexedFaceSet coordIndex='0 1 4 7 -1 0 7 4 1 -1 0 7 6 3 -1 0 3 6 7 -1 5 2 3 6 -1 5 6 3 2 -1'>
+                  <coordinate point='0.14 2.7 -0.14 5.54 2.7 -0.14 5.54 2.7 -8.86 0.14 2.7 -8.86 5.54 2.7 -2.36 5.54 2.7 -4.36 4.42 2.7 -4.36 4.42 2.7 -2.36'></coordinate>
+                </indexedFaceSet>
+              </shape>
+            </transform>
+            <transform DEF='vloerboven'>
+              <shape>
+                <appearance>
+                  <material diffuseColor='1 0.5 0.3' shininess='0.1'></material>
+                </appearance>
+                <indexedFaceSet coordIndex='0 1 4 7 -1 0 7 4 1 -1 0 7 6 3 -1 0 3 6 7 -1 5 2 3 6 -1 5 6 3 2 -1'>
+                  <coordinate point='0.14 2.8 -0.14 5.54 2.8 -0.14 5.54 2.8 -8.86 0.14 2.8 -8.86 5.54 2.8 -2.36 5.54 2.8 -4.36 4.42 2.8 -4.36 4.42 2.8 -2.36'></coordinate>
+                </indexedFaceSet>
+              </shape>
+            </transform>
+            <transform DEF='stukmuur1' translation='1.7 4.05 -4.565'>
+              <shape>
+                <appearance DEF='AOPT_Appearance_21561856'>
+                  <material diffuseColor='1 0.9 0.7' shininess='0.1'></material>
+                </appearance>
+                <box size='2.84 2.5 0.07'></box>
+              </shape>
+            </transform>
+            <transform DEF='stukmuur2' translation='3.155 4.05 -4.28'>
+              <shape>
+                <appearance USE='AOPT_Appearance_21561856'></appearance>
+                <box size='0.07 2.5 0.7'></box>
+              </shape>
+            </transform>
+            <transform DEF='stukmuur3' translation='3.155 4.05 -7.215'>
+              <shape>
+                <appearance USE='AOPT_Appearance_21561856'></appearance>
+                <box size='0.07 2.68 3.57'></box>
+              </shape>
+            </transform>
+            <transform DEF='stukmuur4' translation='3.155 4.05 -1.705'>
+              <shape>
+                <appearance USE='AOPT_Appearance_21561856'></appearance>
+                <box size='0.07 2.5 2.85'></box>
+              </shape>
+            </transform>
+            <transform DEF='stukmuur5' translation='3.4 4.05 -2.325'>
+              <shape>
+                <appearance USE='AOPT_Appearance_21561856'></appearance>
+                <box size='0.42 2.5 0.07'></box>
+              </shape>
+            </transform>
+            <transform DEF='stukmuur6' translation='4.91 4.05 -2.325'>
+              <shape>
+                <appearance USE='AOPT_Appearance_21561856'></appearance>
+                <box size='0.98 2.5 0.07'></box>
+              </shape>
+            </transform>
+            <transform DEF='stukmuur7' translation='4.73 4.05 -4.395'>
+              <shape>
+                <appearance USE='AOPT_Appearance_21561856'></appearance>
+                <box size='1.34 2.5 0.07'></box>
+              </shape>
+            </transform>
+            <transform DEF='stukmuur8' translation='4.025 4.05 -4.96'>
+              <shape>
+                <appearance USE='AOPT_Appearance_21561856'></appearance>
+                <box size='0.07 2.5 1.2'></box>
+              </shape>
+            </transform>
+            <transform>
+              <shape>
+                <appearance USE='AOPT_Appearance_21561856'></appearance>
+                <indexedFaceSet coordIndex='0 1 2 3 -1 0 3 2 1 -1'>
+                  <coordinate point='4.42 2.7 -2.36 4.42 2.7 -3.36 4.42 2.8 -3.36 4.42 2.8 -2.36'></coordinate>
+                </indexedFaceSet>
+              </shape>
+            </transform>
+            <transform DEF='paalvoortrap' translation='4.385 4.05 -3.36'>
+              <shape>
+                <appearance USE='AOPT_Appearance_21561856'></appearance>
+                <box size='0.07 2.5 0.07'></box>
+              </shape>
+            </transform>
+            <transform rotation='0 1 0 1.5708' translation='3.155 2.8 -3.53'>
+              <transform DEF='dwarslat' translation='0 2.035 0'>
+                <shape>
+                  <appearance>
+                    <material diffuseColor='0.95 0.95 0.9' shininess='0.1'></material>
+                  </appearance>
+                  <box size='0.8 0.05 0.05'></box>
+                </shape>
+              </transform>
+              <transform DEF='ruitjeboven' translation='0 2.28 0'>
+                <shape>
+                  <appearance>
+                    <material diffuseColor='0.6 0.6 0.9' shininess='0.8' specularColor='1 1 1' transparency='0.7'></material>
+                  </appearance>
+                  <box size='0.8 0.44 0.01'></box>
+                </shape>
+              </transform>
+              <transform DEF='deuroudersgang' center='-0.4 0 0' translation='0 1.005 0'>
+                <touchSensor DEF='klikopdeur7'></touchSensor>
+                <timeSensor DEF='TimeSource7' cycleInterval='20'></timeSensor>
+                <orientationInterpolator DEF='Deuropen7' key='0 0.025 0.05 0.95 0.975 1' keyValue='0 1 0 0 0 1 0 -1 0 1 0 -2 0 1 0 -2 0 1 0 -1 0 1 0 0'></orientationInterpolator>
+                <transform DEF='deurklink' rotation='0 0 1 1.5708' translation='0.35 0 0.035'>
+                  <shape DEF='enehelft'>
+                    <appearance DEF='aluminium'>
+                      <material diffuseColor='0.4 0.4 0.5' shininess='0.8' specularColor='0.4 0.4 0.5'></material>
+                    </appearance>
+                    <indexedFaceSet coordIndex='2 3 4 5 -1 2 5 4 3 -1 4 5 11 10 -1 4 10 11 5 -1 0 1 7 6 -1 0 6 7 1 -1 6 7 8 9 -1 6 9 8 7 -1 8 9 10 11 -1 8 11 10 9 -1 0 6 4 3 -1 0 3 4 6 -1 6 9 10 4 -1 6 4 10 9 -1 1 2 5 7 -1 1 7 5 2 -1 7 5 11 8 -1 7 8 11 5 -1'>
+                      <coordinate point='-0.015 0.02 0 0.015 0.02 0 0.02 -0.02 0 -0.02 -0.02 0 -0.01 -0.015 0.06 0.01 -0.015 0.06 -0.01 0.015 0.03 0.01 0.015 0.03 0.005 0.1 0.035 -0.005 0.1 0.035 -0.005 0.1 0.055 0.005 0.1 0.055'></coordinate>
+                    </indexedFaceSet>
+                  </shape>
+                  <transform rotation='0 1 0 3.14159' translation='0 0 -0.07'>
+                    <shape USE='enehelft'></shape>
+                  </transform>
+                  <transform translation='-0.03 0 -0.005'>
+                    <shape DEF='vlakdeel'>
+                      <appearance USE='aluminium'></appearance>
+                      <box size='0.18 0.07 0.01'></box>
+                    </shape>
+                  </transform>
+                  <transform translation='-0.03 0 -0.065'>
+                    <shape USE='vlakdeel'></shape>
+                  </transform>
+                </transform>
+                <shape DEF='deurvorm'>
+                  <appearance DEF='deurkleur'>
+                    <material shininess='0.1'></material>
+                  </appearance>
+                  <box size='0.8 2 0.05'></box>
+                </shape>
+              </transform>
+            </transform>
+            <transform rotation='0 1 0 -1.5708' translation='3.155 2.8 -5.03'>
+              <transform USE='dwarslat'></transform>
+              <transform USE='ruitjeboven'></transform>
+              <transform DEF='deurtweedeslaapkamergang' center='-0.4 0 0' translation='0 1.005 0'>
+                <touchSensor DEF='klikopdeur8'></touchSensor>
+                <timeSensor DEF='TimeSource8' cycleInterval='20'></timeSensor>
+                <orientationInterpolator DEF='Deuropen8' key='0 0.025 0.05 0.95 0.975 1' keyValue='0 1 0 0 0 1 0 -1 0 1 0 -2 0 1 0 -2 0 1 0 -1 0 1 0 0'></orientationInterpolator>
+                <transform USE='deurklink'></transform>
+                <shape USE='deurvorm'></shape>
+              </transform>
+            </transform>
+            <transform rotation='0 1 0 3.14159' translation='3.59 2.8 -5.465'>
+              <transform USE='dwarslat'></transform>
+              <transform USE='ruitjeboven'></transform>
+              <transform DEF='deurkinderkamergang' center='-0.4 0 0' translation='0 1.005 0'>
+                <touchSensor DEF='klikopdeur9'></touchSensor>
+                <timeSensor DEF='TimeSource9' cycleInterval='20'></timeSensor>
+                <orientationInterpolator DEF='Deuropen9' key='0 0.025 0.05 0.95 0.975 1' keyValue='0 1 0 0 0 1 0 -1 0 1 0 -2 0 1 0 -2 0 1 0 -1 0 1 0 0'></orientationInterpolator>
+                <transform USE='deurklink'></transform>
+                <shape USE='deurvorm'></shape>
+              </transform>
+            </transform>
+            <transform translation='4.01 2.8 -2.325'>
+              <transform USE='dwarslat'></transform>
+              <transform USE='ruitjeboven'></transform>
+              <transform DEF='deurbadkamergang' center='-0.4 0 0' translation='0 1.005 0'>
+                <touchSensor DEF='klikopdeur10'></touchSensor>
+                <timeSensor DEF='TimeSource10' cycleInterval='20'></timeSensor>
+                <orientationInterpolator DEF='Deuropen10' key='0 0.025 0.05 0.95 0.975 1' keyValue='0 1 0 0 0 1 0 -1 0 1 0 -2 0 1 0 -2 0 1 0 -1 0 1 0 0'></orientationInterpolator>
+                <transform USE='deurklink'></transform>
+                <shape USE='deurvorm'></shape>
+              </transform>
+            </transform>
+            <transform DEF='trapboven' translation='4.42 2.6 -3.36'>
+              <shape>
+                <appearance>
+                  <material diffuseColor='1 0.5 0.3' shininess='0.1'></material>
+                </appearance>
+                <indexedFaceSet DEF='trap2' solid='false' coordIndex='28 1 2 31 -1 29 4 46 -1 32 5 16 -1 33 6 17 -1 34 7 18 -1 35 8 19 -1 36 9 20 -1 37 10 21 -1 38 11 22 -1 39 12 23 -1 40 13 24 -1 41 14 25 -1 42 15 26 -1 2 1 29 30 -1 46 4 32 16 -1 16 5 33 17 -1 17 6 34 18 -1 18 7 35 19 -1 19 8 36 20 -1 20 9 37 21 -1 21 10 38 22 -1 22 11 39 23 -1 23 12 40 24 -1 24 13 41 25 -1 25 14 42 26 -1 26 15 43 27 -1'>
+                  <coordinate point='-0.2 0 1 0 0.2 1 0 0.2 0 -0.2 0 0 0.28 0.4 1 0.6 0.6 1 0.98 0.8 1 0.98 1 0.45 0.98 1.2 0.25 0.98 1.4 0 0.98 1.6 -0.25 0.98 1.8 -0.45 0.98 2 -1 0.6 2.2 -1 0.28 2.4 -1 0 2.6 -1 0 0.6 0 0 0.8 0 0 1 0 0 1.2 0 0 1.4 0 0 1.6 0 0 1.8 0 0 2 0 0 2.2 0 0 2.4 0 0 2.6 0 0 2.8 0 -0.2 0.2 1 0 0.4 1 0 0.4 0 -0.2 0.2 0 0.28 0.6 1 0.6 0.8 1 0.98 1 1 0.98 1.2 0.45 0.98 1.4 0.25 0.98 1.6 0 0.98 1.8 -0.25 0.98 2 -0.45 0.98 2.2 -1 0.6 2.4 -1 0.28 2.6 -1 0 2.8 -1 0 0 1 0 0 0 0 0.4 0'></coordinate>
+                </indexedFaceSet>
+              </shape>
+            </transform>
+            <transform>
+              <shape>
+                <appearance>
+                  <material diffuseColor='0.8 0.4 0.3' shininess='0.1'></material>
+                </appearance>
+                <indexedFaceSet solid='false' coordIndex='16 21 3 59 -1 19 2 20 -1 2 19 61 -1 65 27 2 61 -1 59 3 76 23 -1 17 48 47 16 -1 18 49 48 17 -1 19 50 49 18 -1 20 51 50 19 -1 16 47 52 21 -1 3 21 52 71 -1 20 2 72 51 -1 2 27 73 72 -1 27 32 56 73 -1 63 64 75 76 -1 3 76 75 71 -1 27 65 69 32 -1 32 69 70 56 -1 59 17 16 -1 59 61 17 -1 17 61 18 -1 18 61 19 -1'>
+                  <coordinate point='0 0 0 5.68 0 0 5.68 5.4 0 0 5.4 0 3.19 0 0 4.42 0 0 4.42 2.3 0 3.19 2.3 0 4.84 1.6 0 5.04 1.6 0 5.04 2.3 0 4.84 2.3 0 2.6 0.9 0 2.6 2.3 0 0.6 2.3 0 0.6 0.9 0 0.6 3.6 0 1.5 3.6 0 1.5 5 0 4.42 5 0 4.42 5.4 0 0.6 5.4 0 0 8.555 -3.15 0 2.7 -9 0 0 -9 5.68 8.555 -3.15 5.68 5.4 -6.3 5.68 5.4 -9 5.68 0 -9 2.25 0 -9 2.25 0.6 -9 4.8 0.6 -9 4.8 5.4 -9 1.2 0 -9 1.2 2.7 -9 3.19 0 -0.14 4.42 0 -0.14 4.42 2.3 -0.14 3.19 2.3 -0.14 2.6 0.9 -0.14 2.6 2.3 -0.14 0.6 2.3 -0.14 0.6 0.9 -0.14 4.84 1.6 -0.14 5.04 1.6 -0.14 5.04 2.3 -0.14 4.84 2.3 -0.14 0.6 3.6 -0.14 1.5 3.6 -0.14 1.5 5 -0.14 4.42 5 -0.14 4.42 5.4 -0.14 0.6 5.4 -0.14 2.25 0 -8.86 2.25 0.6 -8.86 4.8 0.6 -8.86 4.8 5.4 -8.86 1.2 0 -8.86 1.2 2.7 -8.86 0 2.7 0 0.14 2.7 -0.14 5.68 2.7 0 5.54 2.7 -0.14 0 2.7 -9 0.14 2.7 -8.86 5.68 2.7 -9 5.54 2.7 -8.86 1.2 2.7 -9 1.2 2.7 -8.86 4.8 2.7 -9 4.8 2.7 -8.86 0.14 5.4 -0.14 5.54 5.4 -0.14 5.54 5.4 -8.86 0.14 2.7 -9 0.14 5.4 -6.3 0 5.4 -6.3'></coordinate>
+                </indexedFaceSet>
+              </shape>
+            </transform>
+            <transform>
+              <shape>
+                <appearance>
+                  <material diffuseColor='1 0.9 0.7' shininess='0.1'></material>
+                </appearance>
+                <indexedFaceSet solid='false' coordIndex='16 21 3 63 -1 19 2 20 -1 63 16 17 65 -1 17 18 19 65 -1 2 19 65 -1 69 27 2 65 -1 63 3 61 62 -1 16 47 48 17 -1 17 48 49 18 -1 18 49 50 19 -1 19 50 51 20 -1 21 52 47 16 -1 73 74 56 32 -1 69 73 32 27 -1 3 21 52 75 -1 20 2 76 51 -1 3 61 79 75 -1 2 27 77 76 -1 62 61 79 78 -1 27 32 56 77 -1'>
+                  <coordinate point='0.28 0 -0.28 5.4 0 -0.28 5.4 5.4 -0.28 0.28 5.4 -0.28 3.19 0 -0.28 4.42 0 -0.28 4.42 2.3 -0.28 3.19 2.3 -0.28 4.84 1.6 -0.28 5.04 1.6 -0.28 5.04 2.3 -0.28 4.84 2.3 -0.28 2.6 0.9 -0.28 2.6 2.3 -0.28 0.6 2.3 -0.28 0.6 0.9 -0.28 0.6 3.6 -0.28 1.5 3.6 -0.28 1.5 5 -0.28 4.42 5 -0.28 4.42 5.4 -0.28 0.6 5.4 -0.28 0.28 8.55 -3.15 0.28 2.7 -8.72 0.28 0 -8.72 5.4 8.55 -3.15 5.4 5.4 -6.3 5.4 5.4 -8.72 5.4 0 -8.72 2.25 0 -8.72 2.25 0.6 -8.72 4.8 0.6 -8.72 4.8 5.4 -8.72 1.2 0 -8.72 1.2 2.7 -8.72 3.19 0 -0.14 4.42 0 -0.14 4.42 2.3 -0.14 3.19 2.3 -0.14 2.6 0.9 -0.14 2.6 2.3 -0.14 0.6 2.3 -0.14 0.6 0.9 -0.14 4.84 1.6 -0.14 5.04 1.6 -0.14 5.04 2.3 -0.14 4.84 2.3 -0.14 0.6 3.6 -0.14 1.5 3.6 -0.14 1.5 5 -0.14 4.42 5 -0.14 4.42 5.4 -0.14 0.6 5.4 -0.14 2.25 0 -8.86 2.25 0.6 -8.86 4.8 0.6 -8.86 4.8 5.4 -8.86 1.2 0 -8.86 1.2 2.7 -8.86 0.28 5.4 0 5.4 5.4 0 0.28 5.4 -6.3 0.28 2.7 -9 0.28 2.7 -0.28 0.14 2.7 -0.14 5.4 2.7 -0.28 5.54 2.7 -0.14 0.28 2.7 -8.72 0.14 2.7 -8.86 5.4 2.7 -8.72 5.54 2.7 -8.86 1.2 2.7 -8.72 1.2 2.7 -8.86 4.8 2.7 -8.72 4.8 2.7 -8.86 0.14 5.4 -0.14 5.54 5.4 -0.14 5.54 5.4 -8.86 0.14 2.7 -9 0.14 5.4 -6.3'></coordinate>
+                </indexedFaceSet>
+              </shape>
+            </transform>
+            <transform translation='2.51 5.025 -0.14'>
+              <shape>
+                <appearance DEF='AOPT_Appearance_21866304'>
+                  <material diffuseColor='0.95 0.95 0.9' shininess='0.1'></material>
+                </appearance>
+                <box size='3.82 0.05 0.05'></box>
+              </shape>
+            </transform>
+            <transform translation='2.51 5.35 -0.14'>
+              <shape>
+                <appearance USE='AOPT_Appearance_21866304'></appearance>
+                <box size='3.82 0.1 0.05'></box>
+              </shape>
+            </transform>
+            <transform translation='0.625 4.5 -0.14'>
+              <shape>
+                <appearance USE='AOPT_Appearance_21866304'></appearance>
+                <box size='0.05 1.8 0.05'></box>
+              </shape>
+            </transform>
+            <transform translation='1.475 4.5 -0.14'>
+              <shape>
+                <appearance USE='AOPT_Appearance_21866304'></appearance>
+                <box size='0.05 1.8 0.05'></box>
+              </shape>
+            </transform>
+            <transform translation='4.395 5.175 -0.14'>
+              <shape>
+                <appearance USE='AOPT_Appearance_21866304'></appearance>
+                <box size='0.05 0.25 0.05'></box>
+              </shape>
+            </transform>
+            <transform translation='3.05 5.175 -0.14'>
+              <shape>
+                <appearance DEF='blauw'>
+                  <material diffuseColor='0.3 0.4 0.7' shininess='0.1'></material>
+                </appearance>
+                <box size='0.9 0.25 0.05'></box>
+              </shape>
+            </transform>
+            <transform translation='1.05 3.625 -0.14'>
+              <shape>
+                <appearance USE='AOPT_Appearance_21866304'></appearance>
+                <box size='0.9 0.05 0.05'></box>
+              </shape>
+            </transform>
+            <transform translation='3.215 3.9 -8.86'>
+              <shape>
+                <appearance USE='AOPT_Appearance_21866304'></appearance>
+                <box size='0.05 2.4 0.05'></box>
+              </shape>
+            </transform>
+            <transform translation='4.775 3.9 -8.86'>
+              <shape>
+                <appearance USE='AOPT_Appearance_21866304'></appearance>
+                <box size='0.05 2.4 0.05'></box>
+              </shape>
+            </transform>
+            <transform translation='3.995 5.25 -8.86'>
+              <shape>
+                <appearance USE='blauw'></appearance>
+                <box size='1.61 0.3 0.05'></box>
+              </shape>
+            </transform>
+            <transform translation='3.995 3.1 -8.86'>
+              <shape>
+                <appearance USE='blauw'></appearance>
+                <box size='1.51 0.8 0.05'></box>
+              </shape>
+            </transform>
+            <transform translation='3.995 3.525 -8.86'>
+              <shape>
+                <appearance USE='AOPT_Appearance_21866304'></appearance>
+                <box size='1.51 0.05 0.05'></box>
+              </shape>
+            </transform>
+            <transform translation='3.995 5.075 -8.86'>
+              <shape>
+                <appearance USE='AOPT_Appearance_21866304'></appearance>
+                <box size='1.51 0.05 0.05'></box>
+              </shape>
+            </transform>
+            <transform translation='3.565 4.3 -8.86'>
+              <shape>
+                <appearance USE='AOPT_Appearance_21866304'></appearance>
+                <box size='0.05 1.5 0.05'></box>
+              </shape>
+            </transform>
+            <transform translation='1.05 4.325 -0.14'>
+              <shape>
+                <appearance DEF='glas'>
+                  <material diffuseColor='0.6 0.6 0.9' shininess='0.8' specularColor='1 1 1' transparency='0.7'></material>
+                </appearance>
+                <box size='0.8 1.35 0.01'></box>
+              </shape>
+            </transform>
+            <transform translation='1.05 5.2 -0.14'>
+              <shape>
+                <appearance USE='glas'></appearance>
+                <box size='0.8 0.3 0.01'></box>
+              </shape>
+            </transform>
+            <transform translation='2.05 5.2 -0.14'>
+              <shape>
+                <appearance USE='glas'></appearance>
+                <box size='1.1 0.3 0.01'></box>
+              </shape>
+            </transform>
+            <transform translation='3.935 5.2 -0.14'>
+              <shape>
+                <appearance USE='glas'></appearance>
+                <box size='0.85 0.3 0.01'></box>
+              </shape>
+            </transform>
+            <transform translation='4.17 4.3 -8.86'>
+              <shape>
+                <appearance USE='glas'></appearance>
+                <box size='1.16 1.5 0.01'></box>
+              </shape>
+            </transform>
+            <transform translation='3.39 4.3 -8.86'>
+              <shape>
+                <appearance USE='glas'></appearance>
+                <box size='0.3 1.5 0.01'></box>
+              </shape>
+            </transform>
+            <transform DEF='zolder'>
+              <transform translation='0.15 5.4 0.3'>
+                <transform rotation='0 1 0 3.14159'>
+                  <shape>
+                    <appearance USE='groen'></appearance>
+                    <indexedFaceSet USE='pijl'></indexedFaceSet>
+                  </shape>
+                </transform>
+                <touchSensor DEF='schuifzolder'></touchSensor>
+              </transform>
+              <transform translation='5.48 5.4 0.3'>
+                <shape>
+                  <appearance USE='rood'></appearance>
+                  <indexedFaceSet USE='pijl'></indexedFaceSet>
+                </shape>
+                <touchSensor DEF='schuifzolder2'></touchSensor>
+              </transform>
+              <transform DEF='dak'>
+                <transform>
+                  <shape>
+                    <appearance>
+                      <material diffuseColor='0.3 0.4 0.5' shininess='0.1'></material>
+                    </appearance>
+                    <indexedFaceSet coordIndex='0 13 14 3 -1 0 3 14 13 -1 16 29 30 19 -1 16 19 30 29 -1 0 1 12 13 -1 0 13 12 1 -1 16 17 28 29 -1 16 29 28 17 -1 1 12 15 2 -1 1 2 15 12 -1 17 28 31 18 -1 17 18 31 28 -1 15 2 3 14 -1 15 14 3 2 -1 31 18 19 30 -1 31 30 19 18 -1 4 8 11 3 -1 4 3 11 8 -1 20 24 27 19 -1 20 19 27 24 -1 5 4 8 9 -1 5 9 8 4 -1 21 20 24 25 -1 21 25 24 20 -1 5 9 10 6 -1 5 6 10 9 -1 21 25 26 22 -1 21 22 26 25 -1 7 6 2 -1 7 2 6 -1 23 22 18 -1 23 18 22 -1 6 10 11 3 2 -1 6 2 3 11 10 -1 22 26 18 -1 22 18 26 -1 26 27 19 -1 26 19 27 -1 26 19 18 -1 26 18 19 -1 0 1 17 16 -1 0 16 17 1 -1 1 2 18 17 -1 1 17 18 2 -1 3 0 16 19 -1 3 19 16 0 -1 2 7 23 18 -1 2 18 23 7 -1 7 6 22 23 -1 7 23 22 6 -1 5 6 22 21 -1 5 21 22 6 -1 5 4 20 21 -1 5 21 20 4 -1 4 3 19 20 -1 4 20 19 3 -1 9 8 24 25 -1 9 25 24 8 -1 8 11 27 24 -1 8 24 27 11 -1 10 11 27 26 -1 10 26 27 11 -1 9 10 26 25 -1 9 25 26 10 -1 12 13 29 28 -1 12 28 29 13 -1 12 15 31 28 -1 12 28 31 15 -1 14 15 31 30 -1 14 30 31 15 -1 13 14 30 29 -1 13 29 30 14 -1'>
+                      <coordinate point='0 5.4 0 5.68 5.4 0 5.68 8.55 -3.15 0 8.55 -3.15 0 2.7 -9 3.12 2.7 -9 3.12 5.4 -6.3 5.68 5.4 -6.3 1.5 3.7 -8 2.3 3.7 -8 2.3 4.7 -7 1.5 4.7 -7 4.1 7.3 -1.9 3.5 7.3 -1.9 3.5 7.7 -2.3 4.1 7.7 -2.3 0 5.44 0.04 5.68 5.44 0.04 5.68 8.60657 -3.15 0 8.60657 -3.15 0 2.74 -9.04 3.12 2.74 -9.04 3.12 5.44 -6.34 5.68 5.44 -6.34 1.5 3.74 -8.04 2.3 3.74 -8.04 2.3 4.74 -7.04 1.5 4.74 -7.04 4.1 7.34 -1.86 3.5 7.34 -1.86 3.5 7.74 -2.26 4.1 7.74 -2.26'></coordinate>
+                    </indexedFaceSet>
+                  </shape>
+                </transform>
+                <transform>
+                  <shape>
+                    <appearance>
+                      <material diffuseColor='0.1 0.1 0.1' shininess='0.1' specularColor='0.3 0.3 0.3'></material>
+                    </appearance>
+                    <indexedFaceSet coordIndex='0 1 5 4 -1 0 4 5 1 -1 1 2 6 5 -1 1 5 6 2 -1 2 3 7 6 -1 2 6 7 3 -1 0 3 7 4 -1 0 4 7 3 -1 4 5 6 7 -1 4 7 6 5 -1'>
+                      <coordinate point='4.8 8 -2.6 5.3 8 -2.6 5.3 8.4 -3 4.8 8.4 -3 4.9 9.4 -2.65 5.2 9.4 -2.65 5.2 9.4 -2.95 4.9 9.4 -2.95'></coordinate>
+                    </indexedFaceSet>
+                  </shape>
+                </transform>
+                <transform translation='0.15 6 0.3'>
+                  <transform rotation='0 1 0 3.14159'>
+                    <shape>
+                      <appearance USE='groen'></appearance>
+                      <indexedFaceSet USE='pijl'></indexedFaceSet>
+                    </shape>
+                  </transform>
+                  <touchSensor DEF='schuifdak'></touchSensor>
+                </transform>
+                <transform translation='5.48 6 0.3'>
+                  <shape>
+                    <appearance USE='rood'></appearance>
+                    <indexedFaceSet USE='pijl'></indexedFaceSet>
+                  </shape>
+                  <touchSensor DEF='schuifdak2'></touchSensor>
+                </transform>
+                <timeSensor DEF='tijd1' cycleInterval='4'></timeSensor>
+                <positionInterpolator DEF='plaats1' key='0 1' keyValue='0 0 0 6 0 0'></positionInterpolator>
+                <timeSensor DEF='tijd1a' cycleInterval='4'></timeSensor>
+                <positionInterpolator DEF='plaats1a' key='0 1' keyValue='6 0 0 0 0 0'></positionInterpolator>
+              </transform>
+              <viewpoint description='op zolder' position='2.5 7 -3.15' fieldOfView='1'></viewpoint>
+              <transform translation='4.39 5.4 -7.67'>
+                <shape>
+                  <appearance DEF='appdak'>
+                    <material ambientIntensity='0' diffuseColor='0.2 0.2 0.2' shininess='0'></material>
+                    <imageTexture url='""'></imageTexture>
+                  </appearance>
+                  <box size='2.6 0.04 2.74'></box>
+                </shape>
+              </transform>
+              <transform DEF='zoldervloer'>
+                <shape>
+                  <appearance>
+                    <material diffuseColor='1 0.5 0.3' shininess='0.1'></material>
+                  </appearance>
+                  <indexedFaceSet coordIndex='0 1 4 7 -1 0 7 4 1 -1 0 7 6 3 -1 0 3 6 7 -1 5 2 3 6 -1 5 6 3 2 -1'>
+                    <coordinate point='0.14 5.4 0 5.54 5.4 0 5.54 5.4 -6.3 0.14 5.4 -6.3 5.54 5.4 -2.36 5.54 5.4 -4.36 4.42 5.4 -4.36 4.42 5.4 -2.36'></coordinate>
+                  </indexedFaceSet>
+                </shape>
+              </transform>
+              <transform DEF='plafondboven'>
+                <shape>
+                  <appearance>
+                    <material diffuseColor='1 1 1' shininess='0.1'></material>
+                  </appearance>
+                  <indexedFaceSet coordIndex='0 1 4 7 -1 0 7 4 1 -1 0 7 6 8 9 -1 0 9 8 6 7 -1 5 2 3 8 6 -1 5 6 8 3 2 -1'>
+                    <coordinate point='0.14 5.3 -0.14 5.54 5.3 -0.14 5.54 5.3 -8.86 3.19 5.3 -8.86 5.54 5.3 -2.36 5.54 5.3 -4.36 4.42 5.3 -4.36 4.42 5.3 -2.36 3.19 5.3 -6.4 0.14 5.3 -6.4'></coordinate>
+                  </indexedFaceSet>
+                </shape>
+              </transform>
+              <transform DEF='vulstukvoortrap'>
+                <shape>
+                  <appearance DEF='wandkleur'>
+                    <material diffuseColor='1 0.9 0.7' shininess='0.1'></material>
+                  </appearance>
+                  <indexedFaceSet solid='false' coordIndex='0 1 2 3 -1 0 3 2 1 -1 0 3 5 4 -1 9 8 6 7 -1'>
+                    <coordinate point='4.42 5.3 -2.36 4.42 5.3 -3.36 4.42 5.4 -3.36 4.42 5.4 -2.36 5.4 5.3 -2.36 5.4 5.4 -2.36 5.4 5.3 -4.36 5.4 5.4 -4.36 4.42 5.3 -4.36 4.42 5.4 -4.36'></coordinate>
+                  </indexedFaceSet>
+                </shape>
+              </transform>
+              <transform translation='4.42 5.4 -3.36'>
+                <group DEF='spijlen'>
+                  <transform translation='-0.025 0.4 0.05'>
+                    <shape DEF='spijl'>
+                      <appearance DEF='kozijn'>
+                        <material diffuseColor='0.95 0.95 0.9' shininess='0.1'></material>
+                      </appearance>
+                      <cylinder bottom='false' top='false' height='0.8' radius='0.015'></cylinder>
+                    </shape>
+                  </transform>
+                  <transform translation='-0.025 0.4 0.15'>
+                    <shape USE='spijl'></shape>
+                  </transform>
+                  <transform translation='-0.025 0.4 0.25'>
+                    <shape USE='spijl'></shape>
+                  </transform>
+                  <transform translation='-0.025 0.4 0.35'>
+                    <shape USE='spijl'></shape>
+                  </transform>
+                  <transform translation='-0.025 0.4 0.45'>
+                    <shape USE='spijl'></shape>
+                  </transform>
+                  <transform translation='-0.025 0.4 0.55'>
+                    <shape USE='spijl'></shape>
+                  </transform>
+                  <transform translation='-0.025 0.4 0.65'>
+                    <shape USE='spijl'></shape>
+                  </transform>
+                  <transform translation='-0.025 0.4 0.75'>
+                    <shape USE='spijl'></shape>
+                  </transform>
+                  <transform translation='-0.025 0.4 0.85'>
+                    <shape USE='spijl'></shape>
+                  </transform>
+                  <transform translation='-0.025 0.4 0.95'>
+                    <shape USE='spijl'></shape>
+                  </transform>
+                </group>
+                <transform rotation='0 1 0 1.5708' translation='0 0 1'>
+                  <group USE='spijlen'></group>
+                </transform>
+                <transform translation='-0.025 0.815 0.525'>
+                  <shape>
+                    <appearance USE='kozijn'></appearance>
+                    <box size='0.05 0.03 1.05'></box>
+                  </shape>
+                </transform>
+                <transform translation='0.5 0.815 1.025'>
+                  <shape>
+                    <appearance USE='kozijn'></appearance>
+                    <box size='1 0.03 0.05'></box>
+                  </shape>
+                </transform>
+              </transform>
+              <transform>
+                <shape>
+                  <appearance>
+                    <material diffuseColor='1 0.9 0.7' shininess='0.1'></material>
+                  </appearance>
+                  <indexedFaceSet solid='false' coordIndex='59 22 61 -1 60 25 26 -1 59 63 68 22 -1 68 22 61 65 -1 60 64 67 25 -1 25 67 66 26 -1'>
+                    <coordinate point='0.28 0 -0.28 5.4 0 -0.28 5.4 5.4 -0.28 0.28 5.4 -0.28 3.19 0 -0.28 4.42 0 -0.28 4.42 2.3 -0.28 3.19 2.3 -0.28 4.84 1.6 -0.28 5.04 1.6 -0.28 5.04 2.3 -0.28 4.84 2.3 -0.28 2.6 0.9 -0.28 2.6 2.3 -0.28 0.6 2.3 -0.28 0.6 0.9 -0.28 0.6 3.6 -0.28 1.5 3.6 -0.28 1.5 5 -0.28 4.42 5 -0.28 4.42 5.4 -0.28 0.6 5.4 -0.28 0.28 8.55 -3.15 0.28 2.7 -8.72 0.28 0 -8.72 5.4 8.55 -3.15 5.4 5.4 -6.3 5.4 5.4 -8.72 5.4 0 -8.72 2.25 0 -8.72 2.25 0.6 -8.72 4.8 0.6 -8.72 4.8 5.4 -8.72 1.2 0 -8.72 1.2 2.7 -8.72 3.19 0 -0.14 4.42 0 -0.14 4.42 2.3 -0.14 3.19 2.3 -0.14 2.6 0.9 -0.14 2.6 2.3 -0.14 0.6 2.3 -0.14 0.6 0.9 -0.14 4.84 1.6 -0.14 5.04 1.6 -0.14 5.04 2.3 -0.14 4.84 2.3 -0.14 0.6 3.6 -0.14 1.5 3.6 -0.14 1.5 5 -0.14 4.42 5 -0.14 4.42 5.4 -0.14 0.6 5.4 -0.14 2.25 0 -8.86 2.25 0.6 -8.86 4.8 0.6 -8.86 4.8 5.4 -8.86 1.2 0 -8.86 1.2 2.7 -8.86 0.28 5.4 0 5.4 5.4 0 0.28 5.4 -6.3 0.28 2.7 -9 0.14 5.4 0 5.54 5.4 0 0.14 5.4 -6.3 5.54 5.4 -6.3 5.54 8.55 -3.15 0.14 8.55 -3.15'></coordinate>
+                  </indexedFaceSet>
+                </shape>
+              </transform>
+              <transform>
+                <shape>
+                  <appearance DEF='steen'>
+                    <material diffuseColor='0.8 0.4 0.3' shininess='0.1'></material>
+                  </appearance>
+                  <indexedFaceSet solid='false' coordIndex='3 22 65 -1 2 26 25 -1 3 59 64 22 -1 61 65 22 64 -1 60 2 25 63 -1 63 25 26 62 -1'>
+                    <coordinate point='0 0 0 5.68 0 0 5.68 5.4 0 0 5.4 0 3.19 0 0 4.42 0 0 4.42 2.3 0 3.19 2.3 0 4.84 1.6 0 5.04 1.6 0 5.04 2.3 0 4.84 2.3 0 2.6 0.9 0 2.6 2.3 0 0.6 2.3 0 0.6 0.9 0 0.6 3.6 0 1.5 3.6 0 1.5 5 0 4.42 5 0 4.42 5.4 0 0.6 5.4 0 0 8.555 -3.15 0 2.7 -9 0 0 -9 5.68 8.555 -3.15 5.68 5.4 -6.3 5.68 5.4 -9 5.68 0 -9 2.25 0 -9 2.25 0.6 -9 4.8 0.6 -9 4.8 5.4 -9 1.2 0 -9 1.2 2.7 -9 3.19 0 -0.14 4.42 0 -0.14 4.42 2.3 -0.14 3.19 2.3 -0.14 2.6 0.9 -0.14 2.6 2.3 -0.14 0.6 2.3 -0.14 0.6 0.9 -0.14 4.84 1.6 -0.14 5.04 1.6 -0.14 5.04 2.3 -0.14 4.84 2.3 -0.14 0.6 3.6 -0.14 1.5 3.6 -0.14 1.5 5 -0.14 4.42 5 -0.14 4.42 5.4 -0.14 0.6 5.4 -0.14 2.25 0 -8.86 2.25 0.6 -8.86 4.8 0.6 -8.86 4.8 5.4 -8.86 1.2 0 -8.86 1.2 2.7 -8.86 0.14 5.4 0 5.54 5.4 0 0.14 5.4 -6.3 5.54 5.4 -6.3 5.54 8.55 -3.15 0.14 8.55 -3.15 0 5.4 -6.3'></coordinate>
+                  </indexedFaceSet>
+                </shape>
+              </transform>
+              <timeSensor DEF='tijd2' cycleInterval='4'></timeSensor>
+              <positionInterpolator DEF='plaats2' key='0 1' keyValue='0 0 0 6 0 0'></positionInterpolator>
+              <timeSensor DEF='tijd2a' cycleInterval='4'></timeSensor>
+              <positionInterpolator DEF='plaats2a' key='0 1' keyValue='6 0 0 0 0 0'></positionInterpolator>
+            </transform>
+            <timeSensor DEF='tijd3' cycleInterval='4'></timeSensor>
+            <positionInterpolator DEF='plaats3' key='0 1' keyValue='0 0 0 6 0 0'></positionInterpolator>
+            <timeSensor DEF='tijd3a' cycleInterval='4'></timeSensor>
+            <positionInterpolator DEF='plaats3a' key='0 1' keyValue='6 0 0 0 0 0'></positionInterpolator>
+          </transform>
+        </group>
+        <ROUTE fromNode='TimeSource' fromField='fraction_changed' toNode='Deuropen' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='klikopdeur2' fromField='touchTime' toNode='TimeSource2' toField='set_startTime'></ROUTE>
+        <ROUTE fromNode='klikopdeur' fromField='touchTime' toNode='TimeSource' toField='set_startTime'></ROUTE>
+        <ROUTE fromNode='Deuropen' fromField='value_changed' toNode='deur' toField='set_rotation'></ROUTE>
+        <ROUTE fromNode='TimeSource2' fromField='fraction_changed' toNode='Deuropen2' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='Deuropen2' fromField='value_changed' toNode='deurkeukengang' toField='set_rotation'></ROUTE>
+        <ROUTE fromNode='klikopdeur3' fromField='touchTime' toNode='TimeSource3' toField='set_startTime'></ROUTE>
+        <ROUTE fromNode='TimeSource3' fromField='fraction_changed' toNode='Deuropen3' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='Deuropen3' fromField='value_changed' toNode='deurwoonkamergang' toField='set_rotation'></ROUTE>
+        <ROUTE fromNode='klikopdeur4' fromField='touchTime' toNode='TimeSource4' toField='set_startTime'></ROUTE>
+        <ROUTE fromNode='TimeSource4' fromField='fraction_changed' toNode='Deuropen4' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='Deuropen4' fromField='value_changed' toNode='deurwoonkamertrapkast' toField='set_rotation'></ROUTE>
+        <ROUTE fromNode='klikopdeur5' fromField='touchTime' toNode='TimeSource5' toField='set_startTime'></ROUTE>
+        <ROUTE fromNode='TimeSource5' fromField='fraction_changed' toNode='Deuropen5' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='Deuropen5' fromField='value_changed' toNode='deurgangmeterkast' toField='set_rotation'></ROUTE>
+        <ROUTE fromNode='klikopdeur6' fromField='touchTime' toNode='TimeSource6' toField='set_startTime'></ROUTE>
+        <ROUTE fromNode='TimeSource6' fromField='fraction_changed' toNode='Deuropen6' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='Deuropen6' fromField='value_changed' toNode='deurtoiletgang' toField='set_rotation'></ROUTE>
+        <ROUTE fromNode='klikopvoordeur' fromField='touchTime' toNode='TimeSourcevoor' toField='set_startTime'></ROUTE>
+        <ROUTE fromNode='TimeSourcevoor' fromField='fraction_changed' toNode='VoorDeuropen' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='VoorDeuropen' fromField='value_changed' toNode='voordeur' toField='set_rotation'></ROUTE>
+        <ROUTE fromNode='klikopachterdeur' fromField='touchTime' toNode='TimeSourceachter' toField='set_startTime'></ROUTE>
+        <ROUTE fromNode='TimeSourceachter' fromField='fraction_changed' toNode='achterDeuropen' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='achterDeuropen' fromField='value_changed' toNode='achterdeur' toField='set_rotation'></ROUTE>
+        <ROUTE fromNode='klikopschuurdeur' fromField='touchTime' toNode='TimeSourceschuur' toField='set_startTime'></ROUTE>
+        <ROUTE fromNode='TimeSourceschuur' fromField='fraction_changed' toNode='schuurDeuropen' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='schuurDeuropen' fromField='value_changed' toNode='schuurdeur' toField='set_rotation'></ROUTE>
+        <ROUTE fromNode='klikopdeur7' fromField='touchTime' toNode='TimeSource7' toField='set_startTime'></ROUTE>
+        <ROUTE fromNode='TimeSource7' fromField='fraction_changed' toNode='Deuropen7' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='Deuropen7' fromField='value_changed' toNode='deuroudersgang' toField='set_rotation'></ROUTE>
+        <ROUTE fromNode='klikopdeur8' fromField='touchTime' toNode='TimeSource8' toField='set_startTime'></ROUTE>
+        <ROUTE fromNode='TimeSource8' fromField='fraction_changed' toNode='Deuropen8' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='Deuropen8' fromField='value_changed' toNode='deurtweedeslaapkamergang' toField='set_rotation'></ROUTE>
+        <ROUTE fromNode='klikopdeur9' fromField='touchTime' toNode='TimeSource9' toField='set_startTime'></ROUTE>
+        <ROUTE fromNode='TimeSource9' fromField='fraction_changed' toNode='Deuropen9' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='Deuropen9' fromField='value_changed' toNode='deurkinderkamergang' toField='set_rotation'></ROUTE>
+        <ROUTE fromNode='klikopdeur10' fromField='touchTime' toNode='TimeSource10' toField='set_startTime'></ROUTE>
+        <ROUTE fromNode='TimeSource10' fromField='fraction_changed' toNode='Deuropen10' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='Deuropen10' fromField='value_changed' toNode='deurbadkamergang' toField='set_rotation'></ROUTE>
+        <ROUTE fromNode='schuifdak' fromField='touchTime' toNode='tijd1' toField='set_startTime'></ROUTE>
+        <ROUTE fromNode='tijd1' fromField='fraction_changed' toNode='plaats1' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='plaats1' fromField='value_changed' toNode='dak' toField='set_translation'></ROUTE>
+        <ROUTE fromNode='schuifzolder' fromField='touchTime' toNode='tijd2' toField='set_startTime'></ROUTE>
+        <ROUTE fromNode='tijd2' fromField='fraction_changed' toNode='plaats2' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='plaats2' fromField='value_changed' toNode='zolder' toField='set_translation'></ROUTE>
+        <ROUTE fromNode='schuifboven' fromField='touchTime' toNode='tijd3' toField='set_startTime'></ROUTE>
+        <ROUTE fromNode='tijd3' fromField='fraction_changed' toNode='plaats3' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='plaats3' fromField='value_changed' toNode='boven' toField='set_translation'></ROUTE>
+        <ROUTE fromNode='schuifdak2' fromField='touchTime' toNode='tijd1a' toField='set_startTime'></ROUTE>
+        <ROUTE fromNode='tijd1a' fromField='fraction_changed' toNode='plaats1a' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='plaats1a' fromField='value_changed' toNode='dak' toField='set_translation'></ROUTE>
+        <ROUTE fromNode='schuifzolder2' fromField='touchTime' toNode='tijd2a' toField='set_startTime'></ROUTE>
+        <ROUTE fromNode='tijd2a' fromField='fraction_changed' toNode='plaats2a' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='plaats2a' fromField='value_changed' toNode='zolder' toField='set_translation'></ROUTE>
+        <ROUTE fromNode='schuifboven2' fromField='touchTime' toNode='tijd3a' toField='set_startTime'></ROUTE>
+        <ROUTE fromNode='tijd3a' fromField='fraction_changed' toNode='plaats3a' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='plaats3a' fromField='value_changed' toNode='boven' toField='set_translation'></ROUTE>
+      </scene>
+    </x3d>
+  </body>
+</html>

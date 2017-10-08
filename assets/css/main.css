@@ -3482,7 +3482,9 @@
 		-ms-flex-shrink: 1;
 		flex-shrink: 1;
 		width: 100%;
-		/* background-color: #f7f7ed; */
+		/*
+		background-color: #e3ecf2;
+		*/
 	}
 
 		#main > .inner {
