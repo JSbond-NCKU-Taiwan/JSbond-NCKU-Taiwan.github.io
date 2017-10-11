@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>Overview - JSbond</title>
+	<title>Experiment - JSbond</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<link rel="shortcut icon" href="images/logo_icon.png">
@@ -14,107 +14,244 @@
 		<div id="main">
 			<div class="inner">
 				<header id="header">
-					<a class="logo"><strong>Overview</strong> - JSbond</a>
+					<a class="logo"><strong>Experiment</strong> - JSbond</a>
 				</header>
-
-					<!-- Content -->
-					<section>
-						<header class="main">
-							<h1>Idea</h1>
-						</header>
-
-						<hr class="major">
-
-						<p>Human bodies are composed of millions of chemicals which regulate our physiological activities and homeostasis. Among these chemicals, one specific protein marks as the definitive factor due to its relations with inflammation, cancer, autoimmune disorders and numerous significant diseases. This protein is observed to be overexpressed in cytoplasm whenever these pathological changes occur, and it exerts its influence by stabilizing and controlling mRNA translation. This critical adaptor protein is called “Human antigen R (HuR)”.</p>
-						<p>As we learned the character of HuR in pathogenesis, we wondered the possibility to inhibit downstream signaling by interfering the binding between HuR and mRNA. To validate our idea, we designed a series of molecules in silicon via HotLig and Discovery Studio, and further examined their effect via in vitro fluorescent and immunoblotting experiment and their therapeutic efficacy in vivo mice model targeting at a commonly seen, easily observed disease regulated by HuR, Psoriasis.</p>
-						<p>To start with, we substituted the specific HuR-binding mRNA fragment with peptides, which perform great potential in pharmaceutical application owing to its high compatibility, specificity, low cytotoxicity, and a wide range of modifications as functional structures. We screened through twenty amino acids and isolated one specialized type as modification target according to the result of Hot-Lig (a binding affinity prediction software). The ultimately created nanoparticle has higher permeability, stability and transportability, which overcame the major setbacks of previous peptide drugs. It was soon named“ JS-1”, the leading character in our play!</p>
-						<p>Then, we conducted an in vitro experiment to monitor the transporting pathway and the target site of JS-1 via bio-labeling fluorescence (Flu-8/TEM) to make sure it could be stably transported and exert its effect. In addition, we used immunoblotting to analyze the influence of JS-1 on expression of inflammatory protein iNOS and COX2, and its great efficacy was revealed!</p>
-						<p>Furthermore, JS-1 also performed well in vivo. We used Imiquimod-induced Psoriasis-like mice model and injected JS-1 intraperitoneally to evaluate its therapeutic effects (Figure. A-1). It turned out that JS-1 exhibits great efficacy. As a series of following data brought out more insights, we found that JS-1 could serve not only as a drug but also as a drug carrier!</p>
-						<p style="text-align:center;">
-							<span class="image fit"><img src="images/overview/idea01.png" alt="" ></img></span>
-							<b>Figure. A-1: Imiquimod-induced dermatitis mice model.</b>
-						</p>
-						<p>The magnificence of JS-1 lies in its ability to bind HuR protein which is usually regulated by the mRNA. This is the very first time that the RNA-binding protein, HuR, can be regulated by peptide nanoparticle to treat HuR-related diseases.</p>
-						<p>Wanna dive deeper into the JS-1 design adventure with us? We are proud to present our research journey in following articles. You can comprehend the properties of HuR in “Overview - HuR introduction” while  “Overview - JS-1 Design” provides you with an abstract of how JS-1 was designed and examined. Don’t forget to check out “Experiment” for detailed design process, and “Simulation”, for molecules design modeling elaboration. Last but not least, a click on “Discussion” opens up a mind-blowing exploration for our future perspective with us!</p>
-						<p>Let’s go meet JS1 and get ready to be amazed!</p>
-
-					</section>
-				</div>
-			</div>
-
-			<!-- Sidebar -->
-			<div id="sidebar">
-				<div class="inner">
-					<!-- Menu -->
-					<nav id="menu">
-						<section>
-							<img width="83%" style="margin: auto; display: block;" src="images/logo_bar.png"></img>
-						</section>
-						<header class="major" style="margin-bottom:2em;">
-						</header>
-						<ul>
-							<li><a href="/">Homepage</a></li>
-							<li>
-								<span class="opener">Overview</span>
-								<ul>
-									<li><a href="overview#idea">Idea</a></li>
-									<li><a href="overview#hurintroduction">HuR Introduction</a></li>
-									<li><a href="overview#js1design">JS-1 Design</a></li>
-								</ul>
-							</li>
-							<li>
-								<span class="opener">Experiment</span>
-								<ul>
-									<li><a href="experiment#pathway">Pathway</a></li>
-									<li><a href="experiment#design">Design</a></li>
-									<li><a href="experiment#invitro">In Vitro</a></li>
-									<li><a href="experiment#modelpsoriasis">Model: Psoriasis</a></li>
-									<li><a href="experiment#invivo">In Vivo</a></li>
-								</ul>
-							</li>
-							<li><a href="simulation">Simulation</a></li>
-							<li>
-								<span class="opener">Discussion</span>
-								<ul>
-									<li><a href="discussion#biosafety">Biosafety</a></li>
-									<li><a href="discussion#huxfamily">HuX Family</a></li>
-									<li><a href="#">PBLG相關結構具相似活性</a></li>
-									<li><a href="#">未來展望</a></li>
-								</ul>
-							</li>
-							<li>
-								<span class="opener">About</span>
-								<ul>
-									<li><a href="about-team">About our team</a></li>
-									<li><a href="about-sponsors">About sponsors</a></li>
-								</ul>
-							</li>
-						</ul>
-					</nav>
-					<!-- Section -->
-					<section>
-						<header class="major">
-							<h2>Contact us</h2>
-						</header>
-						<p>團隊簡介</p>
-						<ul class="contact">
-							<li class="fa-facebook-official"><a href="https://www.facebook.com/NCKUBiomod/">成大Biomod分子設計研究會</a></li>
-						</ul>
-					</section>
-					<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Team JSbond. All rights reserved. <br>Special thanks to theme designer: HTML5 UP.</p>
-					</footer>
-				</div>
+				<section>
+					<header class="main">
+						<h1>In Vitro</h1>
+					</header>
+					<hr class="major">
+					<p>To understand whether JS-1 is also effective <i>in vivo</i>, we conducted an experiment via animal model to observe physiological changes.</p>
+					<p>We used IMQ-induced Psoriasis-like mice model to test the JS-1’s efficacy. We observed the morphology changes (ear appearance), clinical score (psoriasis area severity index, calculation score on the ear erythema, ear thickness, ear scaling, histological micro-scale  measurement (ear epidermis thickness(mm) and ear epidermis proliferation layers) and cytokine array (IL-23 and VEGF) to evaluate the JS-1’s efficacy.</p>
+					<p>To conclude, JS-1 shows great efficacy on IMQ-induced Psoriasis-like mice model.</p>
+					<hr class="major">
+					<h2>III. JS-1 as Treatment for IMQ-induced Psoriasis</h2>
+					<p>The IMQ was smeared on mice’s ear to induce psoriasis [1], and once the symptoms appeared, JS-1 was soon intraperitoneally injected (100 mg/kg) once per day for five days to treat the disease (Figure. H-2 and H-5). We conducted this experiment twice on two different strains of mice, including C57BL/6  mice (8–10 weeks old, male, n=5) and BALB/c mice (8–10 weeks old, male, n=6).</p>
+					<p style="text-align:center;">
+						<span class="image fit"><img src="images/experiment/viv01.png" alt="" ></img></span>
+						<b>Figure. H-1. Imiquimod-induced psoriasis-like skin Inflammation in mice ears.</b>
+					</p>
+					<dl>
+						<dt><h3>Observation Topic</h3></dt>
+						<dd>
+							<h3>1. Clinical Score: Psoriasis Area Severity Index(PASI)</h3>
+							<p>We applied Psoriasis Area Severity Index <font color="lightgray">(<i>PASI score is a tool used to measure the severity and extent of psoriasis. It takes a few minutes and experience to calculate it accurately. A representative area of psoriasis is selected for each body region. The intensity of redness, thickness and scaling of psoriasis is assessed as none (0), mild (1), moderate (2), severe (3) or very severe (4)</i> [2, 3])</font> to evaluate the treatment process in the experiment.</p>
+							<p>Mice were evaluated daily for inflammation in the ears as described above. The severity and incidence of the psoriasis-like skin manifestations were monitored on a scale ranging from 1 to 3 per mouse based on the severity of skin scaling on the ears: 1, weak skin peeling; 2, moderate skin peeling; and 3, heavy skin peeling with some hair loss.</p>
+							<p>We calculated clinical scores on erythema, ear thickness and ear dermis scaling every day of induction period, also on the first, third, and the fifth day of the treatment. The outcome presented statistically significant therapeutic effect after the mice being treated with JS-1.</p>
+						</dd>
+						<dd>
+							<h3>2. Morphology and histology analysis</h3>
+							<p>Mice were sacrificed on the fifth day for the observation of the ear appearance and ear tissue biopsy (H&E stain). We used micro-scale measurement to evaluate the ear epidermis thickness (mm) , and the ear epidermis proliferated layers (Figure. H-4 and H-8). The results showed that JS-1 significantly reduced the proliferation of the epidermis layers, indicating that intraperitoneal injection can affect immune cells’ regulation of inflammatory molecules.</p>
+						</dd>
+						<dd>
+							<h3>3. cytokine array</h3>
+							<p>After comparing the IL-23 (key cytokine of psoriasis) and the VEGF (angiogenesis factor) [4] of the Treatment Groups with those of the Control Group, we found there were statistically significant differences.</p>
+						</dd>
+						<dt><h3>Mice model experiment</h3></dt>
+						<dd>
+							<h3>1. First Experiment on C57BL/6 mice</h3>
+							<p>In the beginning, we conducted experiments on three separate groups of C57BL/6 mice (8 weeks, male, which were respectively Normal, Saline, and JS-1 (100 mg/kg). Our observation topic focused on Morphology--ear appearance and Histology--ear epidermis thickness (mm), and ear epidermis layer. </p>
+							<p>From day -4 to 5, we applied IMQ on mice’s ears to induce the psoriasis symptoms. From days 1 to 5, we injected (i.p.) a dose of saline and JS-1 separately into control groups. On day 6, we sacrificed the mice and analyzed the changes in morphology and histology.</p>
+							<p style="text-align:center;">
+								<span class="image fit"><img src="images/experiment/viv02.png" alt="" ></img></span>
+								<b>Figure. H-2. Scheme of animal study (C57BL/6) design.</b>
+							</p>
+							<dl>
+								<dt></dt>
+								<dd>
+									<h4>(1) Morphology observation</h4>
+									<p>After 5 days treatment, there were significant therapeutic effects showed on ear appearance of JS-1 (100 mg/kg) group (Figure. H-3).</p>
+									<p style="text-align:center;">
+										<span class="image fit"><img src="images/experiment/viv03.png" alt="" ></img></span>
+										<b>Figure. H-3 Therapeutic effects of JS-1 (100 mg/kg) on C57BL/6’s ears.</b>
+									</p>
+								</dd>
+								<dd>
+									<h4>(2) Histological analysis</h4>
+									<p>aking ear skin biopsy with H.E stain (Figure. H-4a), we evaluated the differences of ear epidermis thickness(mm) (Figure. H-4b) and the layers of cell proliferation in the dermis (Figure. H-4c) via micro-scale measurement. The data both revealed statistically significant differences(P< 0.0001, ****), which showed JS-1 significantly alleviated the psoriasis-like dermatitis.</p>
+									<p style="text-align:center;">
+										<span class="image fit"><img src="images/experiment/viv04.png" alt="" ></img></span>
+										<b>Figure. H-4a.</b>
+									</p>
+									<br>
+									<p style="text-align:center;">
+										<span class="image fit"><img src="images/experiment/viv05.png" alt="" ></img></span>
+										<b>Figure. H-4b.</b>
+									</p>
+									<br>
+									<p style="text-align:center;">
+										<span class="image fit"><img src="images/experiment/viv06.png" alt="" ></img></span>
+										<b>Figure. H-4c.</b>
+									</p>
+									<p>Figure.H-4. JS-1 alleviates psoriasis-like dermatitis. (a) Sections of ear skin(H&E stain) (b) Epidermal thickness and (c) the layers of cell proliferation in the dermis were measured using the ruler of the microscope on day 6 after treatment.</p>
+								</dd>
+							</dl>
+							<h3>2. Second Experiment on BALB/c mice</h3>
+							<p>Considering that in previous mice experiment the erythema was difficult to observe, we adopted BALB/c mice (8 weeks, male, n=6) for duplicate experiment. This time, we added a Quercetin group (50 mg/kg), a small molecular HuR inhibitor, to compare the therapeutic efficacy with JS-1.</p>
+							<p>We observed morphology--ear appearance and histology--ear epidermis thickness (mm)& ear epidermis layer, and furthermore used clinical score to track the changes daily. Besides, we also used cytokine array to analyze IL-23 (a key cytokine of psoriasis) and the VEGF (angiogenesis factor).</p>
+							<p style="text-align:center;">
+								<span class="image fit"><img src="images/experiment/viv07.png" alt="" ></img></span>
+								<b>Figure. H-5. Scheme of animal study (BALB/c). </b>
+							</p>
+							<dl>
+								<dt></dt>
+								<dd>
+									<h4>(1) Morphology observation</h4>
+									<p>After 5 days treatment, there were significant therapeutic effects showed on ear appearance of JS-1 (100 mg/kg) group (Figure. H-6).</p>
+									<p style="text-align:center;">
+										<span class="image fit"><img src="images/experiment/viv08.png" alt="" ></img></span>
+										<b>Figure. H-6 Therapeutic effects of JS-1 (100 mg/kg) on BALB/c’s ears.</b>
+									</p>
+								</dd>
+								<dd>
+									<h4>(2) Clinical score</h4>
+									<p>We calculated clinical scores on erythema, ear thickness, scaling every day during drug administration (Figure. H-7).</p>
+									<p>The data revealed that there is a downswing trend of treatment group, meaning that JS-1 can certainly alleviate the IMQ-induced psoriasis-like dermatitis. What’s more, JS-1 has better efficacy than Quercetin. </p>
+									<p style="text-align:center;">
+										<span class="image fit"><img src="images/experiment/viv09.png" alt="" ></img></span>
+										<b>Figure. H-7a. Clinical scores on erythema.</b>
+									</p>
+									<p style="text-align:center;">
+										<span class="image fit"><img src="images/experiment/viv10.png" alt="" ></img></span>
+										<b>Figure. H-7b. Clinical scores on ear thickness.</b>
+									</p>
+									<p style="text-align:center;">
+										<span class="image fit"><img src="images/experiment/viv11.png" alt="" ></img></span>
+										<b>Figure. H-7c. Clinical scores on scaling.</b>
+									</p>
+									<p>Figure. H-7. JS-1 ameliorates psoriasis pathogenesis and has better therapeutic efficacy than Quercetin.</p>
+								</dd>
+								<dd>
+									<h4>(3) Histological analysis</h4>
+									<p>After taking ear skin biopsy for H&E staining (Figure. H-8a), we evaluated the differences of ear epidermis thickness (mm)(Figure. H-8b) and the layers of cell proliferation in the dermis (Figure. H-8c) via micro-scale measurement. The datas all revealed the significant improvement.</p>
+									<dl>
+										<dt></dt>
+										<dd>
+											<h5>a. epidermis thickness(mm)</h5>
+											<p>JS-1 v.s. saline (P< 0.0001, ****), and quercetin v.s. saline ( P= 0.0003, ***) are both significant; meanwhile, JS-1 v.s. quercetin (P= 0.0692, ns) revealed that JS-1 has similar efficacy as quercetin in this score.</p>
+										</dd>
+										<dd>
+											<h5>b. the layers of cell proliferation in the dermis</h5>
+											<p>JS-1 v.s. saline (P< 0.0001, ****), and quercetin v.s. saline ( P= 0.0081, **) are both significant; meanwhile, JS-1 v.s. quercetin (P= 0.0014, ** ) shows that JS-1 has better efficacy in this score.</p>
+											<p>Overall, JS-1 significantly alleviates psoriasis-like dermatitis in mice.</p>
+											<p style="text-align:center;">
+												<span class="image fit"><img src="images/experiment/viv12.png" alt="" ></img></span>
+												<b>Figure. H-8a.</b>
+											</p>
+											<p style="text-align:center;">
+												<span class="image fit"><img src="images/experiment/viv13.png" alt="" ></img></span>
+												<b>Figure. H-8b.</b>
+											</p>
+											<p style="text-align:center;">
+												<span class="image fit"><img src="images/experiment/viv14.png" alt="" ></img></span>
+												<b>Figure. H-8c.</b>
+											</p>
+											<p>Figure.H-8. JS-1 alleviates psoriasis-like dermatitis. (a) Sections of ear skin(H&E stain) (b) Epidermal thickness and (c) the layers of cell proliferation in the dermis were measured using the ruler of the microscope on day 6 after treatment.</p>
+										</dd>
+									</dl>
+								</dd>
+								<dd>
+									<h4>(4) cytokine array</h4>
+									<p>We further used cytokine array to validate our results, comparing the differences in IL-23 and VEGF (Figure. H-9). The data revealed significant difference, proving that JS-1 really performed as we expected.</p>
+									<p style="text-align:center;">
+										<span class="image fit"><img src="images/experiment/viv15.png" alt="" ></img></span>
+										<b>Figure. H-9a.</b>
+									</p>
+									<p style="text-align:center;">
+										<span class="image fit"><img src="images/experiment/viv16.png" alt="" ></img></span>
+										<b>Figure. H-9b.</b>
+									</p>
+									<p>Figure.H-9. Downstream inflammatory molecules are reduced after JS-1 treatment.</p>
+								</dd>
+							</dl>
+						</dd>
+					</dl>
+					<hr class="major">
+					<p><b>Reference:</b>
+						<blockquote>
+							<ol>
+								<li>van der Fits L, Mourits S, Voerman JS, Kant M, Boon L, Laman JD, Cornelissen F, Mus AM, Florencia E, Prens EP, Lubberts E., Imiquimod-induced psoriasis-like skin inflammation in mice is mediated via the IL-23/IL-17 axis., J Immunol. 2009 May 1;182(9):5836-45. doi: 10.4049/jimmunol.0802999.</li>
+								<li>Ashcroft DM, Br J Dermatol. 1999 Aug;141(2):185-91., Wan Po AL, Williams HC, Griffiths CE., Clinical measures of disease severity and outcome in psoriasis: a critical appraisal of their quality.</li>
+								<li>Smith C, Anstey A, Barker J, Burden A, Chalmers R, Chandler D, et al. British Association of Dermatologists' Guidelines for Biologic Interventions for Psoriasis. Br J Dermatol. 2009;161:987–1019.</li>
+								<li>Leslie van der Fits, Sabine Mourits, Jane S. A. Voerman, Marius Kant, Louis Boon, Jon D. Laman, Ferry Cornelissen, Anne-Marie Mus, Edwin Florencia, Errol P. Prens, Erik Lubberts.<i>The Journal of Immunology May 1, 2009, 182 (9) 5836-5845</i></li>
+							</ol>
+						</blockquote>
+					</p>
+				</section>
 			</div>
 		</div>
 
-				<!-- Scripts -->
-				<script src="assets/js/jquery.min.js"></script>
-				<script src="assets/js/skel.min.js"></script>
-				<script src="assets/js/util.js"></script>
-				<script src="assets/js/main.js"></script>
-				<script src="assets/js/jquery.magnific-popup.min.js"></script>
-				<script src="assets/js/dms.js"></script>
-	</body>
+		<div id="sidebar">
+			<div class="inner">
+				<nav id="menu">
+					<section>
+						<img width="83%" style="margin: auto; display: block;" src="images/logo_bar.png"></img>
+					</section>
+					<header class="major" style="margin-bottom:2em;">
+					</header>
+					<ul>
+						<li><a href="/">Homepage</a></li>
+						<li>
+							<span class="opener">Overview</span>
+							<ul>
+								<li><a href="overview_idea">Idea</a></li>
+								<li><a href="overview_hur">HuR Introduction</a></li>
+								<li><a href="overview_js1">JS-1 Design</a></li>
+							</ul>
+						</li>
+						<li>
+							<span class="opener">Experiment</span>
+							<ul>
+								<li><a href="experiment_purpose">Purpose</a></li>
+								<li><a href="experiment_design">Design</a></li>
+								<li><a href="experiment_labbook">LabBook</a></li>
+								<li><a href="experiment_invitro">In Vitro</a></li>
+								<li><a href="experiment_invivo">In Vivo</a></li>
+								<li><a href="experiment_drugcarrier">Drug Carrier</a></li>
+							</ul>
+						</li>
+						<li><a href="simulation">Simulation</a></li>
+						<li>
+							<span class="opener">Discussion</span>
+							<ul>
+								<li><a href="discussion#dis1">Biosafety</a></li>
+								<li><a href="discussion#dis2">Cell Targeting and Drug Carrier</a></li>
+								<li><a href="discussion#dis3">Other Diseases</a></li>
+								<li><a href="discussion#dis4">Hu Protein Family</a></li>
+								<li><a href="discussion#dis5">Outlook</a></li>
+							</ul>
+						</li>
+						<li>
+							<span class="opener">About</span>
+							<ul>
+								<li><a href="about-team">About our team</a></li>
+								<li><a href="about-sponsors">About sponsors</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<section>
+					<header class="major">
+						<h2>Contact us</h2>
+					</header>
+					<p>團隊簡介</p>
+					<ul class="contact">
+						<li class="fa-facebook-official"><a href="https://www.facebook.com/NCKUBiomod/">成大Biomod分子設計研究會</a></li>
+					</ul>
+				</section>
+				<footer id="footer">
+					<p class="copyright">&copy; Team JSbond. All rights reserved. <br>Special thanks to theme designer: HTML5 UP.</p>
+				</footer>
+			</div>
+		</div>
+	</div>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="assets/js/dms.js"></script>
+
+</body>
 </html>
