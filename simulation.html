@@ -24,7 +24,7 @@
 			stage.handleResize();
 		}, false );
 		stage.setSpin(true);
-		stage.loadFile("assets/model/4ED5-PBLG5.pdb").then(function (o) {
+		stage.loadFile("assets/model/1.pdb").then(function (o) {
 			o.addRepresentation("cartoon", { color: "sstruc" })
 			o.addRepresentation("ball+stick", { sele: "ligand", color: cuscolor })
 			o.autoView()
@@ -52,7 +52,6 @@
 						<div id='viewport' style='width:100%; height:500px;'></div>
 						<br>
 						<ul class="pagination">
-							<li><span class="button disabled">Prev</span></li>
 							<li><a class="page active">1</a></li>
 							<li><a href="s2" class="page">2</a></li>
 							<li><a href="s3" class="page">3</a></li>
@@ -62,7 +61,6 @@
 							<li><a href="s7" class="page">7</a></li>
 							<li><a href="s8" class="page">8</a></li>
 							<li><a href="s9" class="page">9</a></li>
-							<li><a href="s2" class="button">Next</a></li>
 						</ul>
 					</div>
 					<hr class="major">
