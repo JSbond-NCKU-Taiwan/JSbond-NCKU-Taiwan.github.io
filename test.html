@@ -1,0 +1,35 @@
+<html>
+<head></head>
+<body>
+<script src="assets/js/ngl.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var stage = new NGL.Stage( "viewport" );
+  var cuscolor = NGL.ColormakerRegistry.addScheme(function (params) {
+    this.atomColor = function (atom) {
+      return 0xFFFF00;
+    };
+  });
+  window.addEventListener( "resize", function( event ){
+    stage.handleResize();
+  }, false );
+  stage.setSpin(true);
+  stage.loadFile("assets/model/4ED5-PBLG5.pdb").then(function (o) {
+    o.addRepresentation("cartoon", { color: "sstruc" })
+    o.addRepresentation("ball+stick", { sele: "ligand", color: cuscolor })
+    o.autoView()
+  })
+});
+</script>
+
+<script>
+function myFun() {
+  $( "body" ).append( "<div id='viewport' style='width:100%; height:500px;'></div><p>aaaaa</p>" );
+  funcA();
+}
+</script>
+<a onclick=myFun()>Show</a>
+
+</body>

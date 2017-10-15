@@ -40,37 +40,16 @@
 				</header>
 				<section>
 					<header class="main">
-						<h1>Simulation</h1>
+						<h1>Silumation</h1>
 					</header>
 					<hr class="major">
 					<p>We built up ligand-receptor docking model via the LibDock program of Discovery Studio V2.5 software. LibDock separated the binding sites of receptors into several “HotSpots” according to intermolecular forces including hydrogen bond and Van der waals force, then calculated every possible conformation between ligands and HotSpots, and yielded a score for each conformation (we adopted CAESAR approach, Conformer Algorithm based on Energy Screening And Recursive build-up ). We recognized the best 3D-docking model after comparing all the scores. </p>
 					<p>Below are 3D-docking models of each ligand (you may rotate the models to examine their relative positions.) and the illustrations of the forces in-between (yellow for ligand, green for amino acids that are related in the interaction, red for conventional hydrogen bond, blue for carbon hydrogen bond, and orange for π interaction). The LibDock score depends on the strength of forces and the distance between them. The higher the score, the stronger the force between the ligand and HuR protein. </p>
 
-					<h3>1. AUUUU (AU-rich RNA)</h3>
-					<div>
-						<h4>3D model</h4>
-						<div id='viewport' style='width:100%; height:500px;'></div>
-						<br>
-						<ul class="pagination">
-							<li><span class="button disabled">Prev</span></li>
-							<li><a class="page active">1</a></li>
-							<li><a href="s2" class="page">2</a></li>
-							<li><a href="s3" class="page">3</a></li>
-							<li><a href="s4" class="page">4</a></li>
-							<li><a href="s5" class="page">5</a></li>
-							<li><a href="s6" class="page">6</a></li>
-							<li><a href="s7" class="page">7</a></li>
-							<li><a href="s8" class="page">8</a></li>
-							<li><a href="s9" class="page">9</a></li>
-							<li><a href="s2" class="button">Next</a></li>
-						</ul>
-					</div>
-					<hr class="major">
 					<h3>2. MS444 (Known HuR inhibitor)</h3>
 					<div class="row">
 						<div class="6u 12u$(small)">
 							<h4>3D model</h4>
-							<a href="#" class="button fit">Show</a>
 							<div id="viewport2" style="width:100%; height:300px;"></div>
 						</div>
 						<div class="6u$ 12u$(small)">
@@ -83,6 +62,19 @@
 							</p>
 						</div>
 					</div>
+					<ul class="pagination">
+						<li><span href="simulation" class="button">Prev</span></li>
+						<li><a href="simulation" class="page">1</a></li>
+						<li><a class="page active">2</a></li>
+						<li><a href="s3" class="page">3</a></li>
+						<li><a href="s4" class="page">4</a></li>
+						<li><a href="s5" class="page">5</a></li>
+						<li><a href="s6" class="page">6</a></li>
+						<li><a href="s7" class="page">7</a></li>
+						<li><a href="s8" class="page">8</a></li>
+						<li><a href="s9" class="page">9</a></li>
+						<li><a href="" class="button">Next</a></li>
+					</ul>
 					<hr class="major">
 					<h3>3. Quercetin (Known HuR inhibitor)</h3>
 					<div class="row">
@@ -261,6 +253,7 @@
 					<header class="major">
 						<h2>Contact us</h2>
 					</header>
+					<p>團隊簡介</p>
 					<ul class="contact">
 						<li class="fa-facebook-official"><a href="https://www.facebook.com/NCKUBiomod/">成大Biomod分子設計研究會</a></li>
 					</ul>
