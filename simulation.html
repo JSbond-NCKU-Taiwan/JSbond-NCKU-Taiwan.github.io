@@ -11,6 +11,7 @@
 </head>
 <body>
 	<script src="assets/js/ngl.js"></script>
+
 	<script>
 	document.addEventListener("DOMContentLoaded", function () {
 		var stage = new NGL.Stage( "viewport" );
@@ -30,6 +31,11 @@
 		})
 	});
 	</script>
+	<script>
+	function opens1() {
+		$( ".s1" ).append( "<p>Test</p>" );
+	}
+	</script>
 	<div id="wrapper">
 		<div id="main">
 			<div class="inner">
@@ -43,8 +49,151 @@
 					<hr class="major">
 					<p>We built up ligand-receptor docking model via the LibDock program of Discovery Studio V2.5 software. LibDock separated the binding sites of receptors into several “HotSpots” according to intermolecular forces including hydrogen bond and Van der waals force, then calculated every possible conformation between ligands and HotSpots, and yielded a score for each conformation (we adopted CAESAR approach, Conformer Algorithm based on Energy Screening And Recursive build-up ). We recognized the best 3D-docking model after comparing all the scores. </p>
 					<p>Below are 3D-docking models of each ligand (you may rotate the models to examine their relative positions.) and the illustrations of the forces in-between (yellow for ligand, green for amino acids that are related in the interaction, red for conventional hydrogen bond, blue for carbon hydrogen bond, and orange for π interaction). The LibDock score depends on the strength of forces and the distance between them. The higher the score, the stronger the force between the ligand and HuR protein. </p>
-					<div id="viewport" style="width:100%; height:300px;"></div>
 
+					<h3>1. AUUUU (AU-rich RNA)</h3>
+					<div class="s1">
+						<h4>3D model</h4>
+						<a onclick="opens1" class="button fit">Show</a>
+						<div id="viewport" style="width:100%; height:300px;"></div>
+					</div>
+					<hr class="major">
+					<h3>2. MS444 (Known HuR inhibitor)</h3>
+					<div class="row">
+						<div class="6u 12u$(small)">
+							<h4>3D model</h4>
+							<a href="#" class="button fit">Show</a>
+							<div id="viewport" style="width:100%; height:300px;"></div>
+						</div>
+						<div class="6u$ 12u$(small)">
+							<h4>Figure. J-2.</h4>
+							<span class="image fit"><img src="images/simulation/j2.png" alt=""></span>
+							<p>LibDock Score：81.387
+								<br>Conventional Hydrogen Bond(Red)：5
+								<br>Carbon Hydrogen Bond(Blue)：1
+								<br>π interaction(Orange)：5
+							</p>
+						</div>
+					</div>
+					<hr class="major">
+					<h3>3. Quercetin (Known HuR inhibitor)</h3>
+					<div class="row">
+						<div class="6u 12u$(small)">
+							<h4>3D model</h4>
+							<div id="viewport" style="width:100%; height:300px;"></div>
+						</div>
+						<div class="6u$ 12u$(small)">
+							<h4>Figure. J-3.</h4>
+							<span class="image fit"><img src="images/simulation/j3.png" alt=""></span>
+							<p>LibDock Score：104.018
+								<br>Conventional Hydrogen Bond(Red)：4
+								<br>Carbon Hydrogen Bond(Blue)：1
+								<br>π interaction(Orange)：9
+							</p>
+						</div>
+					</div>
+					<hr class="major">
+					<h3>4. Oligopeptide-3mer</h3>
+					<div class="row">
+						<div class="6u 12u$(small)">
+							<h4>3D model</h4>
+							<div id="viewport" style="width:100%; height:300px;"></div>
+						</div>
+						<div class="6u$ 12u$(small)">
+							<h4>Figure. J-4.</h4>
+							<span class="image fit"><img src="images/simulation/j4.png" alt=""></span>
+							<p>LibDock Score：187.884
+								<br>Conventional Hydrogen Bond(Red)：7
+								<br>Carbon Hydrogen Bond(Blue)：4
+								<br>π interaction(Orange)：0
+							</p>
+						</div>
+					</div>
+					<hr class="major">
+					<h3>5. Oligopeptide-4mer</h3>
+					<div class="row">
+						<div class="6u 12u$(small)">
+							<h4>3D model</h4>
+							<div id="viewport" style="width:100%; height:300px;"></div>
+						</div>
+						<div class="6u$ 12u$(small)">
+							<h4>Figure. J-5.</h4>
+							<span class="image fit"><img src="images/simulation/j5.png" alt=""></span>
+							<p>LibDock Score：181.057
+								<br>Conventional Hydrogen Bond(Red)：7
+								<br>Carbon Hydrogen Bond(Blue)：5
+								<br>π interaction(Orange)：0
+							</p>
+						</div>
+					</div>
+					<hr class="major">
+					<h3>6. Oligopeptide-5mer</h3>
+					<div class="row">
+						<div class="6u 12u$(small)">
+							<h4>3D model</h4>
+							<div id="viewport" style="width:100%; height:300px;"></div>
+						</div>
+						<div class="6u$ 12u$(small)">
+							<h4>Figure. J-6.</h4>
+							<span class="image fit"><img src="images/simulation/j6.png" alt=""></span>
+							<p>LibDock Score：233.389
+								<br>Conventional Hydrogen Bond(Red)：5
+								<br>Carbon Hydrogen Bond(Blue)：5
+								<br>π interaction(Orange)：1
+							</p>
+						</div>
+					</div>
+					<hr class="major">
+					<h3>7. Oligopeptide-6mer</h3>
+					<div class="row">
+						<div class="6u 12u$(small)">
+							<h4>3D model</h4>
+							<div id="viewport" style="width:100%; height:300px;"></div>
+						</div>
+						<div class="6u$ 12u$(small)">
+							<h4>Figure. J-7.</h4>
+							<span class="image fit"><img src="images/simulation/j7.png" alt=""></span>
+							<p>LibDock Score：165.544
+								<br>Conventional Hydrogen Bond(Red)：4
+								<br>Carbon Hydrogen Bond(Blue)：3
+								<br>π interaction(Orange)：0
+							</p>
+						</div>
+					</div>
+					<hr class="major">
+					<h3>8. Oligopeptide-7mer</h3>
+					<div class="row">
+						<div class="6u 12u$(small)">
+							<h4>3D model</h4>
+							<div id="viewport" style="width:100%; height:300px;"></div>
+						</div>
+						<div class="6u$ 12u$(small)">
+							<h4>Figure. J-8.</h4>
+							<span class="image fit"><img src="images/simulation/j8.png" alt=""></span>
+							<p>LibDock Score：156.946
+								<br>Conventional Hydrogen Bond(Red)：1
+								<br>Carbon Hydrogen Bond(Blue)：2
+								<br>π interaction(Orange)：1
+							</p>
+						</div>
+					</div>
+					<hr class="major">
+					<h3>9. Oligopeptide-8mer</h3>
+					<div class="row">
+						<div class="6u 12u$(small)">
+							<h4>3D model</h4>
+							<div id="viewport" style="width:100%; height:300px;"></div>
+						</div>
+						<div class="6u$ 12u$(small)">
+							<h4>Figure. J-9.</h4>
+							<span class="image fit"><img src="images/simulation/j9.png" alt=""></span>
+							<p>LibDock Score：188.59
+								<br>Conventional Hydrogen Bond(Red)：2
+								<br>Carbon Hydrogen Bond(Blue)：3
+								<br>π interaction(Orange)：0
+							</p>
+						</div>
+					</div>
+					<hr class="major">
 				</section>
 			</div>
 		</div>
